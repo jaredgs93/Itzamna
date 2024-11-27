@@ -1,0 +1,30 @@
+{
+  "sustantivos": [
+    "thing",
+    "something"
+  ],
+  "adjetivos": [
+    "good",
+    "okay",
+    " ok ",
+    "right",
+    "fine",
+    "bad",
+    "wrong",
+    "rich",
+    "poor"
+  ],
+  "verbos": [
+    "say",
+    "said",
+    "give",
+    "gave",
+    " do ",
+    "did",
+    "have",
+    "had",
+    "put",
+    "take",
+    "took"
+  ]
+}

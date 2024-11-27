@@ -1,0 +1,874 @@
+[{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc26"
+  },
+  "nombre_variable": "tiempo_de_reaccion",
+  "descripcion_variable": "Tiempo de reacción",
+  "conjuntos_borrosos": [
+    "Alto",
+    "Medio",
+    "Bajo"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Reaction Time",
+  "conjuntos_borrosos_en": [
+    "High",
+    "Medium",
+    "Low"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc27"
+  },
+  "nombre_variable": "fluidez",
+  "descripcion_variable": "Fluidez",
+  "conjuntos_borrosos": [
+    "Alta",
+    "Media",
+    "Baja"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Fluency",
+  "conjuntos_borrosos_en": [
+    "High",
+    "Medium",
+    "Low"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc28"
+  },
+  "nombre_variable": "rapidez_del_habla",
+  "descripcion_variable": "Rapidez del habla",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Speech Speed",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc29"
+  },
+  "nombre_variable": "organizacion",
+  "descripcion_variable": "Organización",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Organization",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc2a"
+  },
+  "nombre_variable": "mood",
+  "descripcion_variable": "Mood",
+  "conjuntos_borrosos": [
+    "Reading",
+    "Normal",
+    "Passionately"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Mood",
+  "conjuntos_borrosos_en": [
+    "Reading",
+    "Normal",
+    "Passionately"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc2b"
+  },
+  "nombre_variable": "vaguedad",
+  "descripcion_variable": "Vaguedad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Vagueness",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc2c"
+  },
+  "nombre_variable": "ejemplos",
+  "descripcion_variable": "Ejemplos",
+  "conjuntos_borrosos": [
+    "Bajo",
+    "Medio",
+    "Alto"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Examples",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc2d"
+  },
+  "nombre_variable": "muletillas",
+  "descripcion_variable": "Muletillas",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Fillers",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc2e"
+  },
+  "nombre_variable": "velocidad",
+  "descripcion_variable": "Velocidad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Speed",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc2f"
+  },
+  "nombre_variable": "firmeza",
+  "descripcion_variable": "Firmeza",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Firmness",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc30"
+  },
+  "nombre_variable": "claridad",
+  "descripcion_variable": "Claridad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Clarity",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc31"
+  },
+  "nombre_variable": "densidad",
+  "descripcion_variable": "Densidad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Density",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc32"
+  },
+  "nombre_variable": "concision",
+  "descripcion_variable": "Concisión",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Conciseness",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc33"
+  },
+  "nombre_variable": "decision_making",
+  "descripcion_variable": "Toma de decisiones",
+  "conjuntos_borrosos": [
+    "Bajo",
+    "Medio",
+    "Alto"
+  ],
+  "soft_skill": true,
+  "descripcion_variable_en": "Decision Making",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc34"
+  },
+  "nombre_variable": "sonrisa",
+  "descripcion_variable": "Sonrisa",
+  "conjuntos_borrosos": [
+    "Escasa",
+    "Normal",
+    "Frecuente"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Smile",
+  "conjuntos_borrosos_en": [
+    "Scarce",
+    "Normal",
+    "Frequent"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc35"
+  },
+  "nombre_variable": "mirada",
+  "descripcion_variable": "Mirada",
+  "conjuntos_borrosos": [
+    "Difusa",
+    "Normal",
+    "Centrada"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Gaze",
+  "conjuntos_borrosos_en": [
+    "Diffuse",
+    "Normal",
+    "Centered"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc36"
+  },
+  "nombre_variable": "cambios_de_postura",
+  "descripcion_variable": "Cambios de postura",
+  "conjuntos_borrosos": [
+    "Pocos",
+    "Regular",
+    "Muchos"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Posture Changes",
+  "conjuntos_borrosos_en": [
+    "Few",
+    "Regular",
+    "Many"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc37"
+  },
+  "nombre_variable": "empatia",
+  "descripcion_variable": "Empatía",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Normal",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Empathy",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Normal",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc38"
+  },
+  "nombre_variable": "expresion",
+  "descripcion_variable": "Expresión",
+  "conjuntos_borrosos": [
+    "Mala",
+    "Normal",
+    "Buena"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Expression",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc39"
+  },
+  "nombre_variable": "calidad_argumentacion",
+  "descripcion_variable": "Calidad de la argumentación",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Argument Quality",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc3a"
+  },
+  "nombre_variable": "argumentacion",
+  "descripcion_variable": "Argumentación",
+  "conjuntos_borrosos": [
+    "Mala",
+    "Normal",
+    "Buena"
+  ],
+  "descripcion_variable_en": "Argumentation",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc3b"
+  },
+  "nombre_variable": "negociacion",
+  "descripcion_variable": "Negociación",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "soft_skill": true,
+  "descripcion_variable_en": "Negotiation",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc3c"
+  },
+  "nombre_variable": "adecuacion_al_tema",
+  "descripcion_variable": "Adecuación al tema",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Topic Adequacy",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc3d"
+  },
+  "nombre_variable": "constancia",
+  "descripcion_variable": "Constancia",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Consistency",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc3e"
+  },
+  "nombre_variable": "ruido",
+  "descripcion_variable": "Ruido",
+  "conjuntos_borrosos": [
+    "Bajo",
+    "Medio",
+    "Alto"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Noise",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc3f"
+  },
+  "nombre_variable": "comunicacion",
+  "descripcion_variable": "Comunicación",
+  "conjuntos_borrosos": [
+    "Mala",
+    "Media",
+    "Buena"
+  ],
+  "descripcion_variable_en": "Communication",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Medium",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc40"
+  },
+  "nombre_variable": "seguridad_texto",
+  "descripcion_variable": "Seguridad en el texto",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Text Security",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc41"
+  },
+  "nombre_variable": "seguridad_audio",
+  "descripcion_variable": "Seguridad en el audio",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Audio Security",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc42"
+  },
+  "nombre_variable": "seguridad_expresion",
+  "descripcion_variable": "Seguridad en la expresión",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Expression Security",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc43"
+  },
+  "nombre_variable": "posicion_corporal",
+  "descripcion_variable": "Posición corporal",
+  "conjuntos_borrosos": [
+    "Mala",
+    "Media",
+    "Buena"
+  ],
+  "descripcion_variable_en": "Body Position",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Medium",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc44"
+  },
+  "nombre_variable": "seguridad_persona",
+  "descripcion_variable": "Seguridad personal",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Personal Security",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc45"
+  },
+  "nombre_variable": "autoestima",
+  "descripcion_variable": "Autoestima",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "soft_skill": true,
+  "descripcion_variable_en": "Self-esteem",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc46"
+  },
+  "nombre_variable": "originalidad",
+  "descripcion_variable": "Originalidad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Originality",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc47"
+  },
+  "nombre_variable": "congruencia",
+  "descripcion_variable": "Congruencia",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Congruence",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc48"
+  },
+  "nombre_variable": "exactitud",
+  "descripcion_variable": "Exactitud",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Accuracy",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc49"
+  },
+  "nombre_variable": "concision_liderazgo",
+  "descripcion_variable": "Concisión en liderazgo",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Conciseness in Leadership",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc4a"
+  },
+  "nombre_variable": "serenidad",
+  "descripcion_variable": "Serenidad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Serenity",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc4b"
+  },
+  "nombre_variable": "uniformidad_voz",
+  "descripcion_variable": "Uniformidad de la voz",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Voice Uniformity",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc4c"
+  },
+  "nombre_variable": "seguridad_liderazgo",
+  "descripcion_variable": "Seguridad en liderazgo",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Leadership Security",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc4d"
+  },
+  "nombre_variable": "argumentacion_liderazgo",
+  "descripcion_variable": "Argumentación en liderazgo",
+  "conjuntos_borrosos": [
+    "Mala",
+    "Normal",
+    "Buena"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Argumentation in Leadership",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc4e"
+  },
+  "nombre_variable": "liderazgo",
+  "descripcion_variable": "Liderazgo",
+  "conjuntos_borrosos": [
+    "Malo",
+    "Normal",
+    "Bueno"
+  ],
+  "soft_skill": true,
+  "descripcion_variable_en": "Leadership",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc4f"
+  },
+  "nombre_variable": "lenguaje_no_verbal",
+  "descripcion_variable": "Lenguaje no verbal",
+  "conjuntos_borrosos": [
+    "Malo",
+    "Normal",
+    "Bueno"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Non-verbal Language",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc50"
+  },
+  "nombre_variable": "control_estres",
+  "descripcion_variable": "Control del estrés",
+  "conjuntos_borrosos": [
+    "Bajo",
+    "Medio",
+    "Alto"
+  ],
+  "soft_skill": true,
+  "descripcion_variable_en": "Stress Control",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc51"
+  },
+  "nombre_variable": "vocabulario",
+  "descripcion_variable": "Vocabulario",
+  "conjuntos_borrosos": [
+    "Malo",
+    "Normal",
+    "Bueno"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Vocabulary",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc52"
+  },
+  "nombre_variable": "ideas",
+  "descripcion_variable": "Ideas",
+  "conjuntos_borrosos": [
+    "Malo",
+    "Normal",
+    "Bueno"
+  ],
+  "metrica": true,
+  "descripcion_variable_en": "Ideas",
+  "conjuntos_borrosos_en": [
+    "Poor",
+    "Normal",
+    "Good"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc53"
+  },
+  "nombre_variable": "calidad_texto",
+  "descripcion_variable": "Calidad del texto",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "descripcion_variable_en": "Text Quality",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+},
+{
+  "_id": {
+    "$oid": "672377d8676ea8fdce06bc54"
+  },
+  "nombre_variable": "creatividad",
+  "descripcion_variable": "Creatividad",
+  "conjuntos_borrosos": [
+    "Baja",
+    "Media",
+    "Alta"
+  ],
+  "soft_skill": true,
+  "descripcion_variable_en": "Creativity",
+  "conjuntos_borrosos_en": [
+    "Low",
+    "Medium",
+    "High"
+  ]
+}]

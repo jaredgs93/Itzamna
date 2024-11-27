@@ -1,0 +1,17 @@
+{
+  "saludo": [
+    "hello",
+    "hi ",
+    "good morning",
+    "good afternoon",
+    "good evening"
+  ],
+  "despedida": [
+    "thank you",
+    "thanks",
+    "i am very grateful",
+    "i am very thankful",
+    "i thank you all",
+    "have a nice day"
+  ]
+}

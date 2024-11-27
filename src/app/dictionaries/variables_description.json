@@ -1,0 +1,303 @@
+[
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "tiempo_de_reaccion",
+    "nombre": "tiempo de reacción del discurso"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "fluidez",
+    "nombre": "fluidez"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "rapidez_del_habla",
+    "nombre": "rapidez del habla"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "organizacion",
+    "nombre": "organización de las ideas"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "mood",
+    "nombre": "mood"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "vaguedad",
+    "nombre": "vaguedad"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "ejemplos",
+    "nombre": "uso de ejemplos"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "muletillas",
+    "nombre": "cantidad de muletillas"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "velocidad",
+    "nombre": "velocidad"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "firmeza",
+    "nombre": "firmeza"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "claridad",
+    "nombre": "claridad"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "densidad",
+    "nombre": "densidad"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "concision",
+    "nombre": "concisión"
+  },
+  {
+    "tipo_nombre": "N/A",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "decision_making",
+    "nombre": "decision making"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "sonrisa",
+    "nombre": "sonrisa de la persona"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "mirada",
+    "nombre": "mirada"
+  },
+  {
+    "tipo_nombre": "m,p",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "cambios_de_postura",
+    "nombre": "cambios de postura"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "empatia",
+    "nombre": "empatía"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "expresion",
+    "nombre": "expresión"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "expresion_estabilidad_emocional",
+    "nombre": "expresión"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "calidad_argumentacion",
+    "nombre": "calidad de la argumentación"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "argumentacion",
+    "nombre": "argumentación"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "negociacion",
+    "nombre": "negociación"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "adecuacion_al_tema",
+    "nombre": "adecuación al tema"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "concrecion",
+    "nombre": "concreción"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "constancia",
+    "nombre": "constancia al expresar ideas"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "ruido",
+    "nombre": "ruido en el video"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "comunicacion",
+    "nombre": "comunicación"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "seguridad_texto",
+    "nombre": "seguridad en el texto"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "seguridad_audio",
+    "nombre": "seguridad en el audio"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "seguridad_expresion",
+    "nombre": "seguridad en la expresión"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "posicion_corporal",
+    "nombre": "posición corporal"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "seguridad_persona",
+    "nombre": "seguridad de la persona"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "autoestima",
+    "nombre": "autoestima"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "originalidad",
+    "nombre": "originalidad",
+    "detalles":"uso de vocabulario específico y poco común"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "congruencia",
+    "nombre": "congruencia"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "exactitud",
+    "nombre": "exactitud"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "concision_liderazgo",
+    "nombre": "concisión de liderazgo"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "serenidad",
+    "nombre": "serenidad"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "uniformidad_voz",
+    "nombre": "uniformidad en la voz"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "seguridad_liderazgo",
+    "nombre": "seguridad de liderazgo"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "respeto",
+    "nombre": "respeto"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "argumentacion_liderazgo",
+    "nombre": "argumentacion de liderazgo"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "liderazgo",
+    "nombre": "liderazgo"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "lenguaje_no_verbal",
+    "nombre": "lenguaje no verbal"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "control_estres",
+    "nombre": "control del estrés"
+  },
+  {
+    "tipo_nombre": "m",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "vocabulario",
+    "nombre": "manejo del vocabulario"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Antecedent",
+    "nombre_variable": "ideas",
+    "nombre": "distribución de las ideas"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "calidad_texto",
+    "nombre": "calidad del texto"
+  },
+  {
+    "tipo_nombre": "f",
+    "tipo_variable":"Consequent",
+    "nombre_variable": "creatividad",
+    "nombre": "creatividad"
+  }
+]

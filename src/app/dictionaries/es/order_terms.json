@@ -1,0 +1,5 @@
+{
+  "inicio":["para comenzar", "para empezar", "primeramente", "antes de nada", "primero", "en primera instancia"],
+  "intermedio":[ "por otro lado", "por otra parte","además", "aparte de", "como consecuencia", "en consecuencia", "de esta forma", "de este modo","de esta manera", "en este sentido", "por consiguiente"],
+  "final":["en fin", "por último", "finalmente", "por fin", "al final", "terminando", "para resumir", "en resumidas cuentas", "en síntesis", "en conclusión", "para finalizar","después de todo", "en última instancia"]
+}
