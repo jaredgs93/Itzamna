@@ -45,7 +45,7 @@ model_w2v = gensim.models.KeyedVectors.load_word2vec_format(W2V_PATH, binary=Tru
 
 #GLOVE
 embeddings_index = dict()
-with open(os.path.join(models_folder, 'glove.6B.300d.txt')) as file:
+with open(os.path.join(models_folder, 'glove.6B.300d.txt'), encoding="utf8") as file:
   for line in file:
       values = line.split()
       word = values[0]
