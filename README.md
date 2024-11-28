@@ -23,8 +23,10 @@ EMAIL_USER=your_email_address
 EMAIL_PASSWORD=your_email_password
 ```
 ### How to Get Your OpenAI API Key
-- Go to OpenAI API Keys.
-- Sign in or create an account if you don’t already have one.
-- Generate a new API key.
-- Copy the key and paste it into the OPENAI_API_KEY field in the .env file.
 
+1. Go to the [OpenAI API Keys](https://platform.openai.com/account/api-keys) page.
+2. Sign in or create an OpenAI account if you don’t already have one.
+3. Click "Create new secret key" to generate a new API key.
+4. Copy the API key and paste it into the `OPENAI_API_KEY` field in your `.env` file.
+
+## Building and Running the Docker Image
