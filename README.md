@@ -23,8 +23,8 @@ EMAIL_USER=your_email_address
 EMAIL_PASSWORD=your_email_password
 ```
 ### How to Get Your OpenAI API Key
-Go to OpenAI API Keys.
-Sign in or create an account if you don’t already have one.
-Generate a new API key.
-Copy the key and paste it into the OPENAI_API_KEY field in the .env file.
+- Go to OpenAI API Keys.
+- Sign in or create an account if you don’t already have one.
+- Generate a new API key.
+- Copy the key and paste it into the OPENAI_API_KEY field in the .env file.
 
