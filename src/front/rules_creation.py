@@ -41,7 +41,7 @@ opciones_consecuentes = {
 }
 
 # Título de la interfaz
-st.title("Creation of Soft Skills Assessment Rules")
+st.title("Creation of Transversal Skills Assessment Rules")
 
 # Función para construir el antecedente
 def construir_antecedente():
