@@ -29,7 +29,7 @@ from pymongo import MongoClient
 #client = MongoClient(uri)
 client = MongoClient()
 #Base de datos
-evaluacion_soft_skills_db = client['soft_skills_evaluation']
+evaluacion_soft_skills_db = client['skills_evaluation']
 
 #Datasets
 dictionaries_folder = 'dictionaries'
@@ -784,7 +784,7 @@ def calculo_metricas(person_folder, person_id, tema):
   inicio_calculo_metricas = time.time()
   print('***Inference process***')
   resultado_control_borroso = os.path.join(person_folder, person_id+'_fuzzy_control_output.json')
-  explicacion_de_skills = os.path.join(person_folder, person_id+'_soft_skills_explanation.txt')
+  explicacion_de_skills = os.path.join(person_folder, person_id+'_skills_explanation.txt')
   salida = []
   metricas_p_inferencia = os.path.join(person_folder, person_id+'_measures_for_inference.json')
   with open(metricas_p_inferencia, "r") as rf:
@@ -817,7 +817,7 @@ def calculo_metricas(person_folder, person_id, tema):
   explicacion_skills = explicacion_skills.replace('\n','')
   explicacion_skills = explicacion_skills.replace('\t','')
   #Generamos el reporte
-  reporte_texto = reporte(explicacion_skills, '6 soft skills: decision making, negociation, leadership, stress control, creativity and self esteem', tema)
+  reporte_texto = reporte(explicacion_skills, '6 transversal skills: decision making, negociation, leadership, stress control, creativity and self esteem', tema)
   
   #El reporte generado será añadido al fichero de métricas (resultado_metricas)
   try:

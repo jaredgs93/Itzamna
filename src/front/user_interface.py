@@ -18,7 +18,7 @@ from decouple import config
 api_url_save_video = "http://127.0.0.1:8000/save-video"
 api_url_evaluate = "http://127.0.0.1:8000/evaluate_skills"
 
-st.set_page_config(layout="wide", page_title="Analizador Multimodal de Soft Skills")
+st.set_page_config(layout="wide", page_title="Multimodal Assessment of Transversal Skills")
 
 # Función para generar un nombre de archivo único
 def generar_nombre_archivo():
@@ -31,7 +31,7 @@ def generar_pdf(informe_texto):
     styles = getSampleStyleSheet()
 
     elementos = []
-    elementos.append(Paragraph("Multimodal Assessment of Soft Skills", styles["Heading1"]))
+    elementos.append(Paragraph("Multimodal Assessment of Transversal Skills", styles["Heading1"]))
     elementos.append(Spacer(1, 12))
 
     for linea in informe_texto.split("\n"):
@@ -80,7 +80,7 @@ def enviar_correo(destinatario, asunto, cuerpo, archivo_adjunto):
 
 # Página principal para subir o grabar video
 def page_upload():
-    st.header("Multimodal Assessment of _soft skills_")
+    st.header("Multimodal Assessment of _Transversal Skills_")
     st.caption("Enter the URL of the video from the computer. The video must have a first-person shot of the speaker.")
     url_video_input = st.text_input("", "", key="url_video_input")  # Cambiar clave a url_video_input
     st.caption("Enter the topic for evaluation.")
@@ -89,7 +89,7 @@ def page_upload():
     if send_video:
         st.session_state["current_page"] = "processing"
         st.session_state["url_video"] = url_video_input  # Copiamos manualmente el valor
-        st.session_state["task"] = "Soft skills"
+        st.session_state["task"] = "Skills"
         st.session_state["topic"] = topic_input  # Copiamos manualmente el valor
         st.session_state["evaluated"] = False  # Indicamos que aún no ha sido evaluado
         st.rerun()
@@ -118,7 +118,7 @@ def page_processing():
                 return
 
     # Mostrar resultados y detalles
-    st.header("Multimodal Assessment of _soft skills_")
+    st.header("Multimodal Assessment of _Transversal Skills_")
     st.success(
         f"Results available! Processing time: {st.session_state['processing_time']} seconds."
     )
@@ -143,7 +143,7 @@ def page_processing():
         st.download_button(
             label="📄 Download report as PDF",
             data=pdf_file,
-            file_name=f"{st.session_state['person_id']}_soft_skills_report.pdf",
+            file_name=f"{st.session_state['person_id']}_transversal_skills_report.pdf",
             mime="application/pdf",
         )
 
@@ -154,8 +154,8 @@ def page_processing():
         if email_input:
             if enviar_correo(
                 email_input,
-                "Soft Skills Assessment Report",
-                "Please find attached the Soft Skills Assessment report.",
+                "Transversal Skills Assessment Report",
+                "Please find attached the Transversal Skills Assessment report.",
                 pdf_path,
             ):
                 st.success("Email sent successfully!")
