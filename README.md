@@ -1,5 +1,5 @@
-# SoftSkillsAssessment
-A Multimodal Artificial Intelligence Platform for Comprehensive Soft Skills Assessment
+# Transversal Skills Assessment
+A Multimodal Artificial Intelligence Platform for Comprehensive Transversal Skills Assessment
 
 This repository provides a system for evaluating soft skills using a multimodal approach. It includes a REST API and a Streamlit-based user interface for uploading videos, processing them, and generating detailed evaluation reports.
 
