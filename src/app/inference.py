@@ -1,3 +1,5 @@
+import httpcore
+setattr(httpcore, 'SyncHTTPTransport', 'AsyncHTTPProxy')
 import os
 #Bibliotecas para el procedimiento borroso
 import numpy as np
