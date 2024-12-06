@@ -16,8 +16,10 @@ from collections import Counter
 import json
 
 #Para la traducción de texto
-from googletrans import Translator
-translator = Translator()
+"""from googletrans import Translator
+translator = Translator()"""
+
+from translation import translator
 
 #Para la generación del reporte
 from report_generation import *
@@ -806,8 +808,10 @@ def calculo_metricas(person_folder, person_id, tema):
   #Explicaciones
   explicacion_skills = generacion_explicaciones(resultado_reglas, etiquetas_antecedentes)
 
-  #Traducimos al inglés las explicaciones generadas con el traductor de Google
-  explicacion_skills = translator.translate(explicacion_skills, dest='en').text
+  #Traducimos al inglés las explicaciones generadas con GPT
+  #explicacion_skills = translator.translate(explicacion_skills, dest='en').text
+  explicacion_skills = translator(explicacion_skills)
+ 
 
   #Escribir las explicaciones en txt
   with open(explicacion_de_skills, "w") as wf:

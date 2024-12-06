@@ -32,10 +32,12 @@ from keras.preprocessing.text import Tokenizer
 from keras_preprocessing.sequence import pad_sequences
 
 #Para traducir textos del español al inglés
-import httpcore
+"""import httpcore
 setattr(httpcore, 'SyncHTTPTransport', 'AsyncHTTPProxy')
 from googletrans import Translator
-translator = Translator()
+translator = Translator()"""
+
+from translation import translator
 
 # loading pre-trained embeddings, each word is represented as a 300 dimensional vector
 models_folder = 'models'
@@ -492,7 +494,9 @@ def metricas_sujeto(person_id, person_folder, duration, tema):
             #En otros idiomas, traducir los segmentos
             else:
                
-                segments = [translator.translate(seg['text']).text for seg in decoded_data['segments']] 
+                #segments = [translator.translate(seg['text']).text for seg in decoded_data['segments']] 
+                segments = [translator(seg['text']) for seg in decoded_data['segments']]
+                print('segments', segments)
         #Si el texto tiene varios puntos, es decir, varias ideas, dividir por punto
         else:
             #Si está en inglés, dividir la transcripción
@@ -501,8 +505,9 @@ def metricas_sujeto(person_id, person_folder, duration, tema):
                 segments = texto_transcripcion.split('. ')
             #En otros idiomas, traducir al inglés y dividir la transcripción
             else:
-                
-                segments = translator.translate(texto_transcripcion).text.split('. ')
+                segments = translator(texto_transcripcion).split('. ')
+                print(segments)
+                #segments = translator.translate(texto_transcripcion).text.split('. ')
 
         
         #PROCEDIMIENTO CON WORD2VEC
