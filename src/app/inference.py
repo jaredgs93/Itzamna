@@ -27,11 +27,26 @@ from report_generation import *
 from decouple import config
 from pymongo import MongoClient
 #Conexión a la base de datos
-#mongodb_user = config('MONGODB_USER')
-#mongodb_password = config('MONGODB_PASSWORD')
-#uri = f'mongodb+srv://{mongodb_user}:{mongodb_password}@cluster0.aqov9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-#client = MongoClient(uri)
-client = MongoClient()
+
+try:
+    # Intenta conectarte al contenedor de MongoDB (nombre del servicio en Docker Compose)
+    print("Intentando conectar a MongoDB en Docker...")
+    client = MongoClient('mongodb://mongodb:27017', serverSelectionTimeoutMS=2000)
+    # Forzar una operación para verificar conexión
+    client.admin.command('ping')
+    print("Conexión exitosa a MongoDB en Docker.")
+except Exception as e:
+    print(f"Error al conectar a MongoDB en Docker: {e}")
+    print("Intentando conectar a MongoDB local...")
+    try:
+        # Conexión en local (localhost)
+        client = MongoClient('mongodb://localhost:27017', serverSelectionTimeoutMS=2000)
+        client.admin.command('ping')
+        print("Conexión exitosa a MongoDB local.")
+    except Exception as e_local:
+        print(f"Error al conectar a MongoDB local: {e_local}")
+        raise Exception("No se pudo conectar a MongoDB ni en Docker ni en local.") from e_local
+
 #Base de datos
 evaluacion_soft_skills_db = client['skills_evaluation']
 
