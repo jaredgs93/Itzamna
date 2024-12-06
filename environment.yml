@@ -1,0 +1,9 @@
+name: skillsevaluation
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - fastapi
+  - uvicorn
+  - pymongo
+  - conda-forge::streamlit
