@@ -422,7 +422,7 @@ evaluacion_c = ctrl.ControlSystemSimulation(evaluacion_ctrl)"""
 
 #Definición de la colección de las reglas
 reglas_evaluacion_collection = evaluacion_soft_skills_db['rules_evaluation']
-reglas_soft_skills = list(reglas_evaluacion_collection.find({},{'_id':0}))
+reglas_soft_skills = list(reglas_evaluacion_collection.find({},{'_id':0}).sort('rule_id'))
 #Conversión de las reglas a un dataframe
 df_reglas_soft_skills = pd.DataFrame(reglas_soft_skills)
 reglas_evaluacion = lectura_reglas_borrosas(df_reglas_soft_skills)
