@@ -1,4 +1,4 @@
-name: skillsevaluation2
+name: skillsevaluation
 channels:
   - defaults
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
   - pip:
       - https://github.com/explosion/spacy-models/releases/download/es_core_news_lg-3.4.0/es_core_news_lg-3.4.0-py3-none-any.whl
       - https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.1/en_core_web_lg-3.4.1-py3-none-any.whl
+      - cmake==3.22.6
       - deepface==0.0.75
       - fastapi==0.85.0
       - ffmpeg-python==0.2.0
