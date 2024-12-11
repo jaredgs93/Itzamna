@@ -12,7 +12,7 @@ whisper_model = whisper.load_model("base")
 #Modelo de Whisper en inglés (se usa únicamente cuando el idioma según la transcripción no es inglés ni español)
 whisper_model_en = whisper.load_model("base.en")
 #Modelo de Whisper 'large'. Se usa para traducir los textos que no están ni en español ni en inglés al inglés
-whisper_model_large = whisper.load_model("large")
+#whisper_model_large = whisper.load_model("large")
 
 from decouple import config
 from openai import OpenAI
