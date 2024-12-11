@@ -19,9 +19,9 @@ from collections import Counter
 #Para la evaluación de la congruencia
 import pandas as pd
 import numpy as np
-from nltk.corpus import stopwords
 import nltk
-#nltk.download('stopwords')
+nltk.download('stopwords')
+from nltk.corpus import stopwords
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer 
 from sklearn.metrics.pairwise import cosine_similarity
