@@ -15,11 +15,13 @@ import random
 
 #Importar módulo de detección de miradas y parpadeos
 import sys
-sys.path.insert(0, 'gaze-tracking/')
+base_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(base_path, 'gaze-tracking/'))
 import module as m
 
 #Folder de los modelos
-models_folder = 'models'
+base_path = os.path.dirname(os.path.abspath(__file__))
+models_folder = os.path.join(base_path, 'models')
 
 emotion_dict= {'Angry': 0, 'Sad': 5, 'Neutral': 4, 'Disgust': 1, 'Surprise': 6, 'Fear': 2, 'Happy': 3}
 model = load_model(os.path.join(models_folder, 'model_v6_23.hdf5'))

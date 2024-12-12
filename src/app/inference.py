@@ -51,7 +51,8 @@ except Exception as e:
 evaluacion_soft_skills_db = client['skills_evaluation']
 
 #Datasets
-dictionaries_folder = 'dictionaries'
+base_path = os.path.dirname(os.path.abspath(__file__))
+dictionaries_folder = os.path.join(base_path, 'dictionaries')
 
 #Diccionario para las explicaciones
 with open(os.path.join(dictionaries_folder, 'variables_description.json'), "r") as rf:

@@ -25,12 +25,14 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 LIGHT_RED = (2, 53, 255)
 
-
+import os
+base_path = os.path.dirname(os.path.abspath(__file__))
 # face detector object
 detectFace = dlib.get_frontal_face_detector()
 # landmarks detector
+print("Landmark path", os.path.exists(os.path.join(base_path, "Predictor","shape_predictor_68_face_landmarks.dat")))
 predictor = dlib.shape_predictor(
-    "gaze-tracking/Predictor/shape_predictor_68_face_landmarks.dat")
+    os.path.join(base_path, "Predictor","shape_predictor_68_face_landmarks.dat"))
 
 # function
 

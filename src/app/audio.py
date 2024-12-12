@@ -10,7 +10,8 @@ import myprosody2 as mysp
 import pickle
 
 #Folder MyProsody NO REMOVER
-folder_mysp = "Mysp/myprosody-master/myprosody"
+base_path = os.path.dirname(os.path.abspath(__file__))
+folder_mysp = os.path.join(base_path, "Mysp", "myprosody-master", "myprosody")
 
 
 def extraccion_audio(person_folder, video_url, person_id):
@@ -35,7 +36,7 @@ def extraccion_audio(person_folder, video_url, person_id):
   duracion_extr_audio = round(fin_extr_audio-inicio_extr_audio, 2)
   print('Audio extraction time:',duracion_extr_audio, 'secs.')
   #Para prosodia
-  folder_mysp = os.path.join('Mysp', 'myprosody-master', 'myprosody')
+  folder_mysp = os.path.join(base_path, 'Mysp', 'myprosody-master', 'myprosody')
   src_path = audio_video
   dst_path = os.path.join(folder_mysp,'dataset', 'audioFiles', person_id+'_audio.wav')
   shutil.copy(src_path, dst_path)

@@ -38,7 +38,9 @@ a = pyphen.Pyphen(lang='es')
 #Se cargan los diccionarios para las transcripciones en español e inglés de forma global
 #De esta manera se evita llenarlos por cada evaluación
 #Dictionaries
-dictionaries_folder = 'dictionaries'
+base_path = os.path.dirname(os.path.abspath(__file__))
+dictionaries_folder = os.path.join(base_path, 'dictionaries')
+print('Path dictionaries', os.path.exists(dictionaries_folder))
 folder_espanol = os.path.join(dictionaries_folder, 'es')
 folder_ingles = os.path.join(dictionaries_folder, 'en')
 

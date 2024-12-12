@@ -40,7 +40,8 @@ translator = Translator()"""
 from translation import translator
 
 # loading pre-trained embeddings, each word is represented as a 300 dimensional vector
-models_folder = 'models'
+base_path = os.path.dirname(os.path.abspath(__file__))
+models_folder = os.path.join(base_path, 'models')
 import gensim
 W2V_PATH = os.path.join(models_folder, 'GoogleNews-vectors-negative300.bin.gz')
 model_w2v = gensim.models.KeyedVectors.load_word2vec_format(W2V_PATH, binary=True)

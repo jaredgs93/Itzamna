@@ -38,11 +38,12 @@ import shutil
 
 #FOLDERS THAT MAKE UP THE API
 #For temp files
-temp_folder = 'temp'
+base_path = os.path.dirname(os.path.abspath(__file__))
+temp_folder = os.path.join(base_path, 'temp')
 #Dictionaries
-dictionaries_folder = 'dictionaries'
+dictionaries_folder = os.path.join(base_path, 'dictionaries')
 #Mysp
-Mysp_folder = os.path.join('Mysp', 'myprosody-master', 'myprosody', 'dataset', 'audioFiles')
+Mysp_folder = os.path.join(base_path, 'Mysp', 'myprosody-master', 'myprosody', 'dataset', 'audioFiles')
 
 class Video(BaseModel):
     video_url: str
