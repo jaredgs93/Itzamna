@@ -36,3 +36,5 @@ RUN conda run -n skillsevaluation pip install dlib
 
 # Copia el código fuente al contenedor
 COPY src /app/src
+
+CMD ["conda", "run", "-n", "skillsevaluation", "python", "/app/src/app/main.py"]
