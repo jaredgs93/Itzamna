@@ -6,11 +6,38 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000" 
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     container_name: api
     volumes:
       - ./src:/app/src
     depends_on:
       - mongodb
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    container_name: streamlit
+    volumes:
+      - ./src:/app/src
+    command: ["conda", "run", "-n", "streamlit-env", "streamlit", "run", "/app/src/front/rules_creation.py"]
+
+  streamlit-user-interface:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8502:8501" # Cambia el puerto local para evitar conflicto
+    container_name: streamlit-user-interface
+    volumes:
+      - ./src:/app/src
+    command: ["conda", "run", "-n", "streamlit-env", "streamlit", "run", "/app/src/front/user_interface.py"]
 
   mongodb:
     image: mongo:5.0

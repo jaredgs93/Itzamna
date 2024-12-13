@@ -5,10 +5,28 @@ import requests
 st.set_page_config(layout="wide")
 
 
-# Definir los endpoints
-endpoint_antecedentes = "http://127.0.0.1:8000/antecedents"
-endpoint_consecuentes = "http://127.0.0.1:8000/consequents"
-endponint_reglas = "http://127.0.0.1:8000/create_rule/"
+import requests
+
+# Obtener la IP pública del servidor
+def obtener_ip_publica():
+    try:
+        response = requests.get("https://api64.ipify.org?format=json")
+        if response.status_code == 200:
+            return response.json().get("ip")
+        else:
+            raise Exception("No se pudo obtener la IP pública")
+    except Exception as e:
+        print(f"Error obteniendo la IP pública: {e}")
+        return None
+
+# Definir la URL base
+SERVER_IP = obtener_ip_publica()
+BASE_URL = f"http://{SERVER_IP}:8000" if SERVER_IP else "http://127.0.0.1:8000"
+
+# Configurar los endpoints
+endpoint_antecedentes = f"{BASE_URL}/antecedents"
+endpoint_consecuentes = f"{BASE_URL}/consequents"
+endpoint_reglas = f"{BASE_URL}/create_rule/"
 
 # Obtener los datos desde los endpoints
 @st.cache_data
@@ -154,7 +172,7 @@ if st.button("Save Rule"):
             "consequent_value": conjunto_consecuente_es
         }
         print(regla, type(consecuente_es), type(conjunto_consecuente_es))
-        response = requests.post(endponint_reglas, json=regla)
+        response = requests.post(endpoint_reglas, json=regla)
         print(response)
         if response.status_code == 201:
             st.success("Rule saved successfully!")

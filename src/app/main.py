@@ -54,6 +54,11 @@ class Rule(BaseModel):
     consequent: str
     consequent_value:str
 
+import logging
+
+logger = logging.getLogger("uvicorn")
+logger.setLevel(logging.INFO)
+
 app = FastAPI()
 
 metadata = {}
@@ -310,10 +315,3 @@ def proceso_evaluacion_soft_skills(video:Video):
             temp_folder = 'temp'
             print('Excepción:',e)
             pass
-
-
-
-
-
-uvicorn.run(app, host="0.0.0.0", port=8000)
-    

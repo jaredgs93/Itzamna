@@ -14,9 +14,24 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 from decouple import config
 
+# Obtener la IP pública del servidor
+def obtener_ip_publica():
+    try:
+        response = requests.get("https://api64.ipify.org?format=json")
+        if response.status_code == 200:
+            return response.json().get("ip")
+        else:
+            raise Exception("No se pudo obtener la IP pública")
+    except Exception as e:
+        print(f"Error obteniendo la IP pública: {e}")
+        return None
+
+# Definir la URL base
+SERVER_IP = obtener_ip_publica()
+BASE_URL = f"http://{SERVER_IP}:8000" if SERVER_IP else "http://127.0.0.1:8000"
+
 # URL de la API
-api_url_save_video = "http://127.0.0.1:8000/save-video"
-api_url_evaluate = "http://127.0.0.1:8000/evaluate_skills"
+api_url_evaluate = f"{BASE_URL}/evaluate_skills"
 
 st.set_page_config(layout="wide", page_title="Multimodal Assessment of Transversal Skills")
 
