@@ -29,7 +29,14 @@ src/
 ├── front/                # Contains Streamlit-based user interfaces
 │   ├── rules_creation.py # Interface for creating evaluation rules
 │   ├── user_interface.py # Interface for uploading videos and viewing reports
-└── ...
+├── .gitattributes        # Configuration for Git LFS
+├── .gitignore            # Files and directories ignored by Git
+├── Dockerfile            # Instructions to build the Docker image
+├── LICENSE               # License file for the repository
+├── README.md             # Documentation for the repository
+├── docker-compose.yml    # Orchestration of the services with Docker
+├── environment-streamlit.yml # Conda environment configuration for Streamlit
+└── environment.yml       # Conda environment configuration for the API
 ```
 
 ### Details
