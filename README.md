@@ -5,6 +5,44 @@ This repository provides a system for evaluating skills using a multimodal appro
 1. **User Interface for Video Evaluation**: Allows users to upload videos, process them, and generate detailed evaluation reports. These reports can be downloaded as PDFs or sent via email.
 2. **Rules Creation Interface**: Enables users to create and manage evaluation rules, defining the antecedents and consequents for skill assessment.
 
+---
+## Project Structure
+The repository is organized as follows:
+```bash
+src/
+├── app/                  # Contains Python scripts and modules for the API
+│   ├── __init__.py       # Initializes the app module
+│   ├── audio.py          # Handles audio processing for video evaluation
+│   ├── inference.py      # Contains machine learning inference logic
+│   ├── main.py           # Entry point for the API
+│   ├── myprosody2.py     # Processes prosodic features for speech analysis
+│   ├── processing.py     # Handles data processing and integration tasks
+│   ├── report_generation.py # Generates detailed reports based on evaluations
+│   ├── text.py           # Processes textual data extracted from videos
+│   ├── translation.py    # Handles translation tasks, if applicable
+│   └── video.py          # Manages video-related operations
+│   └── ...               # Additional scripts and modules
+├── data/                 # Contains data files and MongoDB initialization script
+│   ├── fuzzy_variables.json   # JSON file for initializing fuzzy variables
+│   ├── rules_evaluation.json  # JSON file for initializing rules
+│   └── init-mongo.sh     # Script to load data into MongoDB
+├── front/                # Contains Streamlit-based user interfaces
+│   ├── rules_creation.py # Interface for creating evaluation rules
+│   ├── user_interface.py # Interface for uploading videos and viewing reports
+└── ...
+```
+
+### Details
+   - `app/`: Contains the core logic and modules for the API, including its main entry point (`main.py`).
+   - `data/`:
+      - `fuzzy_variables.json`: Predefined fuzzy variables used by the system.
+      - `rules_evaluation.json`: Predefined evaluation rules.
+      - `init-mongo.sh`: A script that initializes MongoDB with the provided JSON files.
+   - `front/`:
+      - `rules_creation.py`: A Streamlit interface for creating and managing evaluation rules.
+      - `user_interface.py`: A Streamlit interface for uploading videos, processing them, and generating evaluation reports.
+
+---
 ## Prerequisites
 
 - **Docker** installed on your machine.
