@@ -74,7 +74,7 @@ src/
 2. Access the App Passwords Section
    - Once **2-Step Verification** is enabled, [login to create and manage application passwords](https://myaccount.google.com/apppasswords).
    - In the **To create a new app-specific password, type a name for it below…** enter a descriptive name like `DockerApp`.
-  - Click **Create**.
+   - Click **Create**.
 
 3. Copy the Generated Password
    - A 16-character password will appear in a pop-up window.
