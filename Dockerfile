@@ -1,10 +1,9 @@
-# Usa Miniconda como base
 FROM continuumio/miniconda3:4.12.0
 
-# Establece el directorio de trabajo
+# Sets the working directory
 WORKDIR /app
 
-# Instala herramientas necesarias para la compilación de Dlib
+# Install tools needed for Dlib compilation
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     libgl1-mesa-glx \
@@ -17,36 +16,36 @@ RUN apt-get update && apt-get install -y \
     libx11-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copia los archivos de configuración para los entornos
+# Copy the configuration files for the environments
 COPY environment.yml /app/environment.yml
 COPY environment-streamlit.yml /app/environment-streamlit.yml
 
-# Crea el entorno Conda principal
+# Create the main Conda environment
 RUN conda env create -f /app/environment.yml && \
     conda clean --all --yes
 
-# Crea el entorno Conda para Streamlit
+# Create the Conda environment for Streamlit
 RUN conda env create -f /app/environment-streamlit.yml && \
     conda clean --all --yes
 
-# Configura el entorno principal por defecto
+# Set the default main environment
 ENV PATH /opt/conda/envs/skillsevaluation/bin:$PATH
 ENV CONDA_DEFAULT_ENV=skillsevaluation
 
-# Activa el entorno por defecto al iniciar
+# Activates the default environment at start-up
 SHELL ["conda", "run", "-n", "skillsevaluation", "/bin/bash", "-c"]
 
-# Instala Dlib en el entorno principal
+# Install Dlib in the main environment
 RUN conda run -n skillsevaluation pip install dlib
 
-# Copia el código fuente al contenedor
+# Copy the source code to the container
 COPY src /app/src
 
-# Configurar el PYTHONPATH para incluir `/app/src/app`
+# Configure the PYTHONPATH to include `/app/src/app`.
 ENV PYTHONPATH=/app/src/app:$PYTHONPATH
 
-# Cambiar el directorio de trabajo a `/app/src/app` para ejecutar la API
+# Change working directory to `/app/src/app` to run the API
 WORKDIR /app/src/app
 
-# Ejecutar uvicorn con la configuración adecuada
+# Running uvicorn
 CMD ["conda", "run", "-n", "skillsevaluation", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--log-level", "debug"]

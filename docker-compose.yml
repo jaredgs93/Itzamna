@@ -33,7 +33,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8502:8501" # Cambia el puerto local para evitar conflicto
+      - "8502:8501"
     container_name: streamlit-user-interface
     volumes:
       - ./src:/app/src
