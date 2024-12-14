@@ -36,6 +36,37 @@ This repository provides a system for evaluating skills using a multimodal appro
    - Copy this password. It will only be shown once, so make sure to save it securely.
 ---
 
+## System Composition with Docker
+This system uses Docker Compose to orchestrate multiple services, ensuring seamless integration and ease of deployment. Below is an overview of the services included:
+
+### Services
+#### 1. API Service (`api`)
+   - Description: This service hosts the REST API for skill evaluation, which processes videos, creates rules, and handles requests from the user interfaces.
+   - Exposed Port: `8000`
+   - Build: Built using the `Dockerfile` in the root directory.
+   - Volume: Maps the local `src` directory to `/app/src` in the container for code synchronization.
+   - Dependencies: Depends on the `mongodb` service for database operations.
+
+#### 2. Streamlit Rule Creation Interface (`streamlit`)
+   - Description: A Streamlit-based interface for creating and managing evaluation rules.
+   - Exposed Port: `8501`
+   - Command: Runs the `rules_creation.py` interface located in `src/front`.
+
+#### 3. Streamlit User Evaluation Interface (`streamlit-user-interface`)
+   - Description: A Streamlit-based interface for uploading videos, evaluating them, and generating detailed reports.
+   - Exposed Port: `8502`
+   - Command: Runs the `user_interface.py` interface located in `src/front`.
+
+#### 4. MongoDB Service (`mongodb`)
+   - Description: A MongoDB database used for storing rules, evaluation data, and other related information.
+   - Exposed Port: `27017`
+   - Data Persistence: Uses a Docker volume (`mongo-data`) to persist database files.
+   - Initialization: Initializes with data from the `src/data` directory.
+
+### Volumes
+   - `mongo-data`: A Docker volume used to persist MongoDB data across container restarts.
+---
+
 ## Building and Running the Docker Image
 ### 1. Clone the Repository
 Start by cloning the repository and pulling the required files (including those managed by Git LFS):
