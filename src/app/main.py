@@ -87,7 +87,7 @@ async def add_process_time_header(request, call_next):
 
 @app.get('/')
 def read_root():
-    return ({"Welcome":'API for soft skills assessment in videos'})
+    return ({"Welcome":'API for transversal skills assessment in videos'})
 
 #Endpoint to obtain possible antecedents for rules
 @app.get('/antecedents')
