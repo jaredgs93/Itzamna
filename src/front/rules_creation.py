@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Configurar diseño de la página a "wide"
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Rules Creation")
 
 
 import requests
