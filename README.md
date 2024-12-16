@@ -5,6 +5,13 @@ This repository provides a system for evaluating skills using a multimodal appro
 1. **User Interface for Video Evaluation**: Allows users to upload videos, process them, and generate detailed evaluation reports. These reports can be downloaded as PDFs or sent via email.
 2. **Rules Creation Interface**: Enables users to create and manage evaluation rules, defining the antecedents and consequents for skill assessment.
 
+## Table of Contents
+
+1. [Project Structure](#project-structure)
+2. [Prerequisites](#prerequisites)
+3. [System Composition with Docker](#system-composition-with-docker)
+4. [Building and Running the Docker Image](#building-and-running-the-docker-image)
+5. [How to Use](#how-to-use)
 ---
 ## Project Structure
 The repository is organized as follows:
