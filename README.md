@@ -5,6 +5,9 @@ This repository provides a system for evaluating skills using a multimodal appro
 1. **User Interface for Video Evaluation**: Allows users to upload videos, process them, and generate detailed evaluation reports. These reports can be downloaded as PDFs or sent via email.
 2. **Rules Creation Interface**: Enables users to create and manage evaluation rules, defining the antecedents and consequents for skill assessment.
 
+![overview](https://github.com/user-attachments/assets/2a532cd1-4a4c-4237-ba7c-39bbe4cf3603)
+
+
 ## Table of Contents
 
 1. [Project Structure](#project-structure)
