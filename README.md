@@ -207,7 +207,7 @@ Below that, you can view the detailed report of the results. You can also:
   - Choose an **Operator** (e.g., AND, OR) to combine antecedents.
 
 - Define the **Consequent**:
-  - Specify the resulting skill and its value (e.g., Leadership Security is Low).
+  - Specify the resulting consequent and its value (e.g., Leadership Security is Low).
 
 #### 3. Save the Rule
 - Click the "Save Rule" button to store the new rule.
