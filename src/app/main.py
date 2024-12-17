@@ -140,7 +140,6 @@ def rule_post(rule:Rule):
         reglas_collection = evaluacion_soft_skills_db['rules_evaluation']
         rule_document = {'antecedente':rule.antecedent, 'consecuente':rule.consequent, 'consecuente_valor':rule.consequent_value}
         reglas_collection.insert_one(rule_document)
-        #Regresamos un mensaje de éxito con estado 201
         return {"Message":"Rule created"}
     except Exception as e:
         return {"Error":str(e)}
@@ -194,7 +193,7 @@ async def check_video_eligibility(video: Video):
 
 from multiprocessing import Pool
 
-#Endpoint to evaluate the soft skills of a video
+#Endpoint to evaluate the skills of a video
 @app.post('/evaluate_skills')
 async def video_evaluation(video: Video):
     collected = gc.collect()
