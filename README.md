@@ -177,16 +177,23 @@ docker-compose down
 
 <img width="1440" alt="home_page" src="https://github.com/user-attachments/assets/442e272b-ddd0-4815-9374-46b830d71341" />
 
+#### 3. Process the Video
 
-#### 2. Process the Video
-The backend API processes the video, evaluates skills, and generates a detailed report.
+The backend API processes the video, evaluates skills, and generates a detailed report. Once the procedure is finished, at the top of the page you can view the assessed video and a summary of the results of the transversal skills.
+
 ![results_interface_1](https://github.com/user-attachments/assets/1f9a0e93-f963-49ee-a312-933810df310d)
 
-#### 3. Download or Email the Report
+#### 4. Download or Email the Report
+Below that, you can view the detailed report of the results. You can also:
 - Download the report as a PDF.
 - Optionally, send the report to an email address.
 
+<img width="1313" alt="results_interface_2" src="https://github.com/user-attachments/assets/2bd5b587-e246-45cf-93d0-a59964967ad5" />
+
+
 ### Rules creation
+![rules_interface](https://github.com/user-attachments/assets/6a4e02b9-beec-41df-a03c-18c7df9b6786)
+
 #### 1. Access the User Interface
 - Access the interface at `http://<SERVER_IP>:8501`, replacing `<SERVER_IP>` with:
   - `localhost` if running locally.
