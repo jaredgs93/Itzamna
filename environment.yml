@@ -29,7 +29,6 @@ dependencies:
       - git+https://github.com/openai/whisper.git
       - openai==1.35.3
       - reportlab==4.2.5
-      - streamlit==1.14.0
       - tensorflow==2.10.1
       - protobuf==3.19.6
       - pymongo==4.10.1
