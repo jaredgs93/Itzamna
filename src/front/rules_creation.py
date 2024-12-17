@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 
-# Configurar diseño de la página a "wide"
 st.set_page_config(layout="wide", page_title="Rules Creation")
 
 
@@ -9,12 +8,12 @@ import requests
 
 BASE_URL = "http://api:8000"
 
-# Configurar los endpoints
+# API Endpoints
 endpoint_antecedentes = f"{BASE_URL}/antecedents"
 endpoint_consecuentes = f"{BASE_URL}/consequents"
 endpoint_reglas = f"{BASE_URL}/create_rule/"
 
-# Obtener los datos desde los endpoints
+# Obtaining data from endpoints
 @st.cache_data
 def obtener_datos(endpoint):
     response = requests.get(endpoint)
@@ -24,11 +23,11 @@ def obtener_datos(endpoint):
         st.error("Error al obtener datos del endpoint")
         return []
 
-# Cargar datos de antecedentes y consecuentes
+
 datos_antecedentes = obtener_datos(endpoint_antecedentes)
 datos_consecuentes = obtener_datos(endpoint_consecuentes)
 
-# Crear diccionarios para mapear 'variable_description' a datos requeridos en orden alfabético
+# Create dictionaries to map ‘variable_description’ to the required data in alphabetical order.
 opciones_antecedentes = {
     item['variable_description']: {
         "fuzzy_sets": item['fuzzy_sets'],
@@ -44,10 +43,10 @@ opciones_consecuentes = {
     } for item in sorted(datos_consecuentes, key=lambda x: x['variable_description'])
 }
 
-# Título de la interfaz
+
 st.title("Creation of Transversal Skills Assessment Rules")
 
-# Función para construir el antecedente
+# Function to construct the antecedent
 def construir_antecedente():
     antecedente = ""
     condiciones = [
@@ -60,20 +59,20 @@ def construir_antecedente():
         if condicion:
             variable, es_o_no, conjunto, operador = condicion
             if variable and conjunto:
-                # Obtener valores en español para la variable y conjunto borroso
+                # Obtain values in English for the variable and fuzzy set.
                 variable_es = opciones_antecedentes[variable]["variable_name_es"]
                 index_conjunto = opciones_antecedentes[variable]["fuzzy_sets"].index(conjunto)
                 conjunto_es = opciones_antecedentes[variable]["fuzzy_sets_es"][index_conjunto]
                 
-                # Agregar "NOT" si es "IS NOT"
+                
                 condicion_texto = f"{'NOT ' if es_o_no == 'IS NOT' else ''}{variable_es}[{conjunto_es}]"
                 antecedente += condicion_texto
-                if operador:  # Agregar el operador (AND/OR) si no es el último
+                if operador:  # Add operator (AND/OR) if it is not the last one
                     antecedente += f" {operador} "
                     
     return 'IF '+ antecedente
 
-# Antecedente 1
+# Antecedent 1
 st.subheader("Antecedent 1")
 col1, col2, col3, col4 = st.columns([2, 1, 2, 1])
 
@@ -92,7 +91,7 @@ with col3:
 with col4:
     operador_1 = st.selectbox("Operator", ["", "AND", "OR"], key="operador_1")
 
-# Antecedente 2
+# Antecedent 2
 if operador_1:
     st.subheader("Antecedent 2")
     col1, col2, col3, col4 = st.columns([2, 1, 2, 1])
@@ -112,9 +111,9 @@ if operador_1:
     with col4:
         operador_2 = st.selectbox("Operator", ["", "AND", "OR"], key="operador_2")
 else:
-    operador_2 = None  # Inicializar operador_2 para evitar errores
+    operador_2 = None  # Initialise operador_2 to avoid errors
 
-# Antecedente 3 (solo visible si hay un operador en el antecedente 2)
+# Antecedent 3 (only visible if there is an operator in antecedent 2)
 if operador_2:
     st.subheader("Antecedent 3")
     col1, col2, col3 = st.columns([2, 1, 2])
@@ -131,27 +130,27 @@ if operador_2:
             conjuntos_opciones_3 = opciones_antecedentes[descripcion_3]["fuzzy_sets"]
             conjunto_3 = st.selectbox("", [""] + conjuntos_opciones_3, key="conjunto_3")
 
-# Consecuente
+# Consequent
 st.subheader("Consequent")
 
-# Desplegable para seleccionar el consecuente
+# Drop-down to select the consequent
 descripcion_consecuente = st.selectbox("THEN", [""] + list(opciones_consecuentes.keys()), key="consecuente")
 
-# Desplegable de conjuntos borrosos para el consecuente seleccionado
+# Drop-down of fuzzy sets for the selected consequent
 if descripcion_consecuente:
     conjuntos_consecuente = opciones_consecuentes[descripcion_consecuente]["fuzzy_sets"]
     conjunto_consecuente = st.selectbox("IS", [""] + conjuntos_consecuente, key="conjunto_consecuente")
 
-# Botón para guardar la regla
+
 if st.button("Save Rule"):
     antecedente_texto = construir_antecedente()
     if descripcion_consecuente and conjunto_consecuente:
-        # Obtener el nombre en español para el consecuente y el conjunto en español
+        # Get the name in Spanish for the consequent and the whole in Spanish
         consecuente_es = opciones_consecuentes[descripcion_consecuente]["variable_name_es"]
         index_conjunto_consecuente = opciones_consecuentes[descripcion_consecuente]["fuzzy_sets"].index(conjunto_consecuente)
         conjunto_consecuente_es = opciones_consecuentes[descripcion_consecuente]["fuzzy_sets_es"][index_conjunto_consecuente]
         
-        #Preparamos la inserción de la regla a través del endpoint correspondiente
+        # Preparing the insertion of the rule through the corresponding endpoint.
         regla = {
             "antecedent": antecedente_texto,
             "consequent": consecuente_es,

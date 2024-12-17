@@ -16,16 +16,16 @@ from decouple import config
 
 BASE_URL = "http://api:8000"
 
-# URL de la API
+# API Endpoint
 api_url_evaluate = f"{BASE_URL}/evaluate_skills"
 
 st.set_page_config(layout="wide", page_title="Multimodal Assessment of Transversal Skills")
 
-# Función para generar un nombre de archivo único
+# Function to generate a unique file name
 def generar_nombre_archivo():
     return f"{uuid.uuid4()}.mp4"
 
-# Función para generar un archivo PDF con el contenido del informe
+# Function to generate a PDF file with the report contents
 def generar_pdf(informe_texto):
     temp_pdf = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
     doc = SimpleDocTemplate(temp_pdf.name, pagesize=letter)
@@ -46,21 +46,21 @@ def generar_pdf(informe_texto):
     doc.build(elementos)
     return temp_pdf.name
 
-# Función para enviar correo electrónico con el informe adjunto
+# Function to send e-mail with report attached
 def enviar_correo(destinatario, asunto, cuerpo, archivo_adjunto):
     remitente = config("EMAIL_USER")
-    password = config("EMAIL_PASSWORD")  # Usa una contraseña de aplicación si usas Gmail.
+    password = config("EMAIL_PASSWORD")  # Use an application password if you use Gmail.
 
-    # Configurar el mensaje
+    # Configure the message
     mensaje = MIMEMultipart()
     mensaje["From"] = remitente
     mensaje["To"] = destinatario
     mensaje["Subject"] = asunto
 
-    # Añadir el cuerpo del mensaje
+    # Add the message body
     mensaje.attach(MIMEText(cuerpo, "plain"))
 
-    # Adjuntar el archivo PDF
+    # Attach PDF file
     with open(archivo_adjunto, "rb") as adjunto:
         parte = MIMEBase("application", "octet-stream")
         parte.set_payload(adjunto.read())
@@ -68,7 +68,7 @@ def enviar_correo(destinatario, asunto, cuerpo, archivo_adjunto):
         parte.add_header("Content-Disposition", f"attachment; filename={archivo_adjunto.split('/')[-1]}")
         mensaje.attach(parte)
 
-    # Enviar el correo
+    # Send the mail
     try:
         with smtplib.SMTP("smtp.gmail.com", 587) as servidor:
             servidor.starttls()
@@ -79,26 +79,26 @@ def enviar_correo(destinatario, asunto, cuerpo, archivo_adjunto):
         st.error(f"Error sending email: {e}")
         return False
 
-# Página principal para subir o grabar video
+# Main page for uploading or recording video
 def page_upload():
     st.header("Multimodal Assessment of _Transversal Skills_")
     st.caption("Enter the URL of the video from the computer. The video must have a first-person shot of the speaker.")
-    url_video_input = st.text_input("", "", key="url_video_input")  # Cambiar clave a url_video_input
+    url_video_input = st.text_input("", "", key="url_video_input")  # Change key to url_video_input
     st.caption("Enter the topic for evaluation.")
-    topic_input = st.text_input("", "", key="topic_input")  # Cambiar clave a topic_input
+    topic_input = st.text_input("", "", key="topic_input")
     send_video = st.button("Upload video URL", type="primary")
     if send_video:
         st.session_state["current_page"] = "processing"
-        st.session_state["url_video"] = url_video_input  # Copiamos manualmente el valor
+        st.session_state["url_video"] = url_video_input 
         st.session_state["task"] = "Skills"
-        st.session_state["topic"] = topic_input  # Copiamos manualmente el valor
-        st.session_state["evaluated"] = False  # Indicamos que aún no ha sido evaluado
+        st.session_state["topic"] = topic_input  
+        st.session_state["evaluated"] = False  
         st.rerun()
 
 
-# Página de procesamiento
+# Processing page
 def page_processing():
-    if not st.session_state.get("evaluated", False):  # Solo evaluamos si no ha sido procesado
+    if not st.session_state.get("evaluated", False):  # It is only assessed if it has not been processed.
         with st.spinner("Evaluating video..."):
             topic = st.session_state.get("topic", "")
             url_video = st.session_state.get("url_video", "")
@@ -118,7 +118,7 @@ def page_processing():
                 st.error("Error processing video")
                 return
 
-    # Mostrar resultados y detalles
+    #  Show results and details
     st.header("Multimodal Assessment of _Transversal Skills_")
     st.success(
         f"Results available! Processing time: {st.session_state['processing_time']} seconds."
@@ -148,7 +148,7 @@ def page_processing():
             mime="application/pdf",
         )
 
-    # Formulario para enviar el informe por correo electrónico
+    # Form to send the report by e-mail
     st.subheader("📧 Send report via email")
     email_input = st.text_input("Enter recipient email:")
     if st.button("Send Email"):
@@ -165,13 +165,13 @@ def page_processing():
 
     if st.button("Back to Home"):
         st.session_state["current_page"] = "upload"
-        st.session_state["evaluated"] = False  # Reiniciamos el estado para una nueva evaluación
+        st.session_state["evaluated"] = False  # Reset the status for a new evaluation
         st.rerun()
 
 # Main
 def main():
     st.session_state.setdefault("current_page", "upload")
-    st.session_state.setdefault("evaluated", False)  # Inicializamos el estado "evaluated"
+    st.session_state.setdefault("evaluated", False)  # Initialise the evaluated status
 
     if st.session_state["current_page"] == "upload":
         page_upload()
