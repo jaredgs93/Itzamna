@@ -126,7 +126,7 @@ This system uses Docker Compose to orchestrate multiple services, ensuring seaml
 ### 1. Clone the Repository
 Start by cloning the repository and pulling the required files (including those managed by Git LFS):
 ```bash
-git clone
+git clone https://github.com/jaredgs93/TransversalSkillsAssessment.git
 cd TransversalSkillsAssessment
 git lfs install
 git lfs pull
