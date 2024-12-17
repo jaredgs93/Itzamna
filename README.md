@@ -175,8 +175,12 @@ docker-compose down
 - Provide the topic for evaluation in the text input field.
 - Click **Upload Video URL** to start the evaluation process.
 
+<img width="1440" alt="home_page" src="https://github.com/user-attachments/assets/442e272b-ddd0-4815-9374-46b830d71341" />
+
+
 #### 2. Process the Video
 The backend API processes the video, evaluates skills, and generates a detailed report.
+![results_interface_1](https://github.com/user-attachments/assets/1f9a0e93-f963-49ee-a312-933810df310d)
 
 #### 3. Download or Email the Report
 - Download the report as a PDF.
