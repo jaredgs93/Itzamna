@@ -171,7 +171,7 @@ docker-compose down
   - `localhost` if running locally.
   - The public IP address or domain name of the server if running remotely (e.g., `http://123.45.67.89:8502`).
 #### 2. Upload a Video
-- Enter the video URL you want to evaluate.
+- Enter the video URL you want to evaluate. The URL must point directly to a video file and end with the file extension (e.g., `.mp4`, `.mov`, etc.).
 - Provide the topic for evaluation in the text input field.
 - Click **Upload Video URL** to start the evaluation process.
 
