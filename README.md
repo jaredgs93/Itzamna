@@ -1,5 +1,5 @@
-# Transversal Skills Assessment
-A Multimodal Artificial Intelligence Platform for Comprehensive Transversal Skills Assessment
+# Itzamna
+A Multimodal Artificial Intelligence Platform for Comprehensive Transversal Skills Evaluation
 
 This repository provides a system for evaluating skills using a multimodal approach. It includes a REST API and two Streamlit-based user interfaces:
 1. **User Interface for Video Evaluation**: Allows users to upload videos, process them, and generate detailed evaluation reports. These reports can be downloaded as PDFs or sent via email.
