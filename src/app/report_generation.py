@@ -1,12 +1,11 @@
-###SCRIPT PARA LA GENERACIÓN DEL REPORTE USANDO UN MODELO DE GPT A PARTIR DEL PROMPT GENERADO###
+###SCRIPT FOR REPORT GENERATION USING A GPT MODEL FROM THE GENERATED PROMPT###
 
-#Importación de bibliotecas
 from decouple import config
 from openai import OpenAI
 
 client = OpenAI(api_key = config('OPENAI_API_KEY'))
 
-#Función para la generación del reporte
+# Function for report generation
 def reporte(prompt, objetivo, tema):
     completion = client.chat.completions.create(
             messages = [{'role': 'system', 'content' : """We have received a video of a person making a speech."""+
