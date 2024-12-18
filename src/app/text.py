@@ -1,17 +1,17 @@
 from audio import general_statistics
 import os
-#Bibliotecas para la evaluación del tiempo de ejecución
+# Runtime Evaluation Libraries
 import time
 import datetime
 
 import whisper
 
-#MODELOS
-#Modelo de Whisper para transcripción
+# MODELS
+# Whisper model for transcription
 whisper_model = whisper.load_model("base")
-#Modelo de Whisper en inglés (se usa únicamente cuando el idioma según la transcripción no es inglés ni español)
+# Whisper model in English (used only when the transcribed language is neither English nor Spanish).
 whisper_model_en = whisper.load_model("base.en")
-#Modelo de Whisper 'large'. Se usa para traducir los textos que no están ni en español ni en inglés al inglés
+# Whisper ‘large’ model. Used to translate texts that are neither in English nor in Spanish into English.
 #whisper_model_large = whisper.load_model("large")
 
 from decouple import config
@@ -34,57 +34,57 @@ meaning_cloud_api_key = config('MEANINGCLOUD_API_KEY')
 import pyphen
 a = pyphen.Pyphen(lang='es')
 
-#CARGA DE DICCIONARIOS DE DATOS (ESPAÑOL E INGLÉS)
-#Se cargan los diccionarios para las transcripciones en español e inglés de forma global
-#De esta manera se evita llenarlos por cada evaluación
-#Dictionaries
+# LOADING OF DATA DICTIONARIES (ENGLISH AND SPANISH)
+# The dictionaries for the English and Spanish transcriptions are loaded globally
+# This avoids filling them out for each assessment
+# Dictionaries
 base_path = os.path.dirname(os.path.abspath(__file__))
 dictionaries_folder = os.path.join(base_path, 'dictionaries')
 print('Path dictionaries', os.path.exists(dictionaries_folder))
 folder_espanol = os.path.join(dictionaries_folder, 'es')
 folder_ingles = os.path.join(dictionaries_folder, 'en')
 
-#Se almacenarán los diccionarios según el idioma
+# Dictionaries will be stored according to language
 idiomas=['es','en']
 diccionarios ={'es':[],
                'en':[]}
 
-#Se crea un ciclo donde se recuperan los diccionarios
+# A cycle is created where dictionaries are retrieved
 for lang in idiomas:
   folder_path = os.path.join(dictionaries_folder, lang)
 
-  #Conectores
+  # Connectors
   connectors_json = os.path.join(folder_path, 'connectors.json')
   with open(connectors_json, "r") as rf:
       connectors_list = json.load(rf)
   
-  #Vicios
+  # Language vices
   vices_json = os.path.join(folder_path, 'language_vices.json')
   with open(vices_json, "r") as rf:
       vices_list = json.load(rf)
 
-  #Muletillas
+  # Fillers
   fillers_json = os.path.join(folder_path, 'fillers.json')
   with open(fillers_json, "r") as rf:
       fillers_list = json.load(rf)
   
-  #Concreción
+  # Concretion
   concretion_json = os.path.join(folder_path, 'concretion_terms.json')
   with open(concretion_json, "r") as rf:
       concretion_list = json.load(rf)
     
-  #Respeto
+  # Respect
   respect_json = os.path.join(folder_path, 'respect_terms.json')
   with open(respect_json, "r") as rf:
       respect_list = json.load(rf)
   
-  #Orden
+  # Order
   order_json = os.path.join(folder_path, 'order_terms.json')
   with open(order_json, "r") as rf:
       order_list = json.load(rf)
     
-  #Para tribunales amigables
-  #Discurso
+  
+  # Speech
   speech_json = os.path.join(folder_path, 'speech.json')
   with open(speech_json, "r") as rf:
       discurso_list = json.load(rf)
@@ -96,9 +96,9 @@ for lang in idiomas:
   
   diccionarios[lang] = [{'connectors':connectors_list,'language_vices':vices_list,'fillers':fillers_list,'concretion':concretion_list,'respect':respect_list,
                          'order':order_list,'common_words':common_words, 'speech':discurso_list}]
-  #También se agrega el pipeline de SpaCy según el idioma del video a evaluar
-  #Por otra parte, se agregan los modelos de clasificación de texto para meaning cloud
-  #Los temas para la evaluación de topics se agregan
+  # The SpaCy pipeline is also added according to the language of the video to be evaluated
+  # Moreover, text classification models for MeaningCloud are added (alternative to GPT)
+  # The topics for the evaluation of topics are added
   if lang=='es':
     diccionarios[lang].append({'pipeline':'es_core_news_lg'})
     diccionarios[lang].append({'models_text_classification':['EUROVOC_es_ca']})
@@ -132,15 +132,15 @@ def extraccion_transcripcion(person_folder, person_id):
     transcription = whisper_model.transcribe(audio_path)
     
     if transcription['language']!='en' and transcription['language']!='es' and transcription['text']!='':
-      #Versión 1: Extraer la transcripción usando el modelo en inglés
+      # Version 1: Extract the transcript using the English model
       #transcription = whisper_model_en.transcribe(audio_path)
-      #Versión 2: Extraer la transcripción usando el modelo 'large'
+      # Version 2: Extracting the transcript using the ‘large’ model
       #transcription = whisper_model_large.transcribe(audio_path, task = 'translate')
 
-      #Versión 3: Extraer la transcripción usando la API de OpenAI
+      # Version 3: Extracting the transcript using the OpenAI API
       transcription = traduccion_transcripcion(audio_path)
 
-      #Cambiar el idioma a inglés para evitar conflictos en métricas basadas en el idioma
+      # Change the language to English to avoid conflicts in language-based metrics
       transcription['original_language'] = transcription['language']
       transcription['language'] = 'en'
     with open(transcription_video, "w") as outfile:
@@ -158,21 +158,21 @@ def metricas_texto(person_folder, person_id,duration, nb_frames):
   fichero_metricas = os.path.join(person_folder, person_id+'_text_measures.json')
   
   if os.path.exists(fichero_metricas)==False:
-    #Métricas de prosodia
+    # Prosody metrics
       
       transcripcion_json = os.path.join(person_folder, person_id+"_transcription.json")
       error_segmento=False
-      #Se revisan los errores de los segmentos de la transcripción para su posterior corrección
+      # Errors in segments of the transcript are reviewed for further correction
       with open(transcripcion_json, "r") as rf:
         transcription_data = json.load(rf)
-      #Revisión de los segmentos en reversa
+      # Reverse Segment Revision
       for segmento in reversed(transcription_data['segments']):
-        #Verificar si el rango total del segmento está fuera de la duración
+        # Check if the total range of the segment is outside the duration
         if segmento['start']>duration:
           transcription_data['segments'].remove(segmento)
           transcription_data['text'] = transcription_data['text'].replace(segmento['text'], '')
           error_segmento = True
-        #Verificar si el final del segmento es incorrecto
+        # Check if the end of the segment is wrong
         elif segmento['start']<duration and segmento['end']>duration:
           segmento['end'] = duration
           error_segmento = True
@@ -193,8 +193,7 @@ def metricas_texto(person_folder, person_id,duration, nb_frames):
           inicio_prosodia = time.time()
           metrics = general_statistics(person_id, person_folder)
           fin_prosodia = time.time()
-          #duracion_prosodia = fin_prosodia - inicio_prosodia
-          #print('Duración de la prosodia:', formato_tiempo(duracion_prosodia))
+          
           prosody_file = os.path.join(person_folder, person_id + '_prosody.TextGrid')
     
           tg = textgrid.TextGrid.fromFile(prosody_file)
@@ -206,20 +205,15 @@ def metricas_texto(person_folder, person_id,duration, nb_frames):
 
           metrics['inicio_discurso'] = inicio_discurso
           metrics['num_palabras'] = metricas_palabras['num_palabras']
-          #Articulación se recalcula
+          # Articulation is recalculated
           metrics['articulacion'] = silabas(transcripcion_json)
         except Exception as e:
            print(e, "Exception in prosody metrics extraction")
         
         
-      """else:
-        metrics = {'num_pausas': 0, 'articulacion': 0, 'rate_of_speech': 0, 
-                    'balance': 0, 'f0_mean': 0, 'f0_std': 0,
-                    'f0_median': 0, 'f0_min': 0, 'f0_max': 0, 
-                    'f0_quantile25': 0, 'f0_quan75': 0, 'mood': 'Silent'}"""
       if metrics!= {}:
         metricas_palabras['prosodia']=metrics
-      #Omitir resultados que no se escribirán en el fichero
+      # Omit results not to be written to the file
       try:
         metricas_palabras.pop('inicio_discurso')
         metricas_palabras.pop('num_palabras')
@@ -234,12 +228,11 @@ def metricas_texto(person_folder, person_id,duration, nb_frames):
   else:
     print("Metrics file was obtained previously")    
   fin_proc_texto = time.time()
-  #duracion_proc_texto = fin_proc_texto - inicio_proc_texto - duracion_prosodia
-  #return {'duracion_procesamiento_texto':duracion_proc_texto, 'duracion_prosodia':duracion_prosodia}
+  
 
 def elementos_transcripcion(person_folder, person_id, duration, transcription_language):
 
-    #A partir del idioma de la transcripción se evaluarán las métricas
+    # Based on the language of the transcript the metrics will be evaluated
     lista_diccionarios = diccionarios[transcription_language][0]
     connectors_dictionary = lista_diccionarios['connectors']
     vices_dictionary = lista_diccionarios['language_vices']
@@ -250,7 +243,7 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
     common_words = lista_diccionarios['common_words']
     speech_dictionary = lista_diccionarios['speech']
 
-    #Pipeline según el idioma
+    # Pipeline by language
     nlp = spacy.load(diccionarios[transcription_language][1]['pipeline'])
 
     transcripcion_json = os.path.join(person_folder, person_id+'_transcription.json')
@@ -262,7 +255,7 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
     concretion_l = []
     respect_terms_l = []
     order_terms_l = []
-    #Tribunales amigables
+   
     speech_elements = []
     num_adjetivos_con_rep=0
     num_conectores_con_rep=0
@@ -295,12 +288,12 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
         num_adjetivos_con_rep = 0
         respect_terms_l = []
         order_terms_l = []
-        #Tribunales amigables
+        
         speech_elements = {}
         
     else:
         tiempo_c_sonidos=0
-        #Validar tiempo en silencio
+        # Validate silent time
         
         for segmento in data['segments']:
           tiempo_c_sonidos = tiempo_c_sonidos+ (segmento['end']-segmento['start'])
@@ -308,7 +301,7 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
 
         if tiempo_c_sonidos/duration>0.1:
             
-            #Validamos si las palabras existen
+            # Validate if the words exist
 
             doc = nlp(speech_transcription)
             words = [token.text
@@ -334,18 +327,18 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
                 num_adjetivos_con_rep = 0
                 respect_terms_l = []
                 order_terms_l = []
-                #Tribunales amigables
+                
                 speech_elements = {}
             
             else:
             
-              #Se validará el texto
+              # Text is validated
               duracion_minutos=round(data['segments'][-1]['end'],2)
-              #duracion_minutos=round(duracion_minutos/60000, 2)
+            
               start_speech = data['segments'][0]['start']
-              #start_speech=start_speech/1000
+             
               
-              #Detección de adjetivos
+              # Adjectives detection
               document = nlp(speech_transcription)
               
               for token in document:
@@ -355,59 +348,59 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
                       existe["conteo"]+=1
                   except:
                       adjectives.append({"adjetivo":token.lemma_, "conteo":1})
-              #Conteo de adjetivos
+              # Adjective count
               for a in adjectives:
                   num_adjetivos_con_rep = num_adjetivos_con_rep+a["conteo"]
 
-              #Detección de conectores
+              # Connector detection
               for item in connectors_dictionary:
                   if item in speech_transcription:
                     connectors.append({"conector":item, "conteo":speech_transcription.count(item)})
               
-              #Conteo de conectores
+              # Connector count
               for c in connectors:
                   num_conectores_con_rep=num_conectores_con_rep+c["conteo"]
               
-              #Detección de palabras vagas
+              # Vague word detection
               for t in vices_dictionary:
                   for v in vices_dictionary[t]:
                       if v in speech_transcription.split():
                           vices.append({"término":v, "conteo":speech_transcription.split().count(v)})
       
-              #Conteo de palabras vagas
+              # Vague word count
               for v in vices:
                   num_palabras_vagas_con_rep = num_palabras_vagas_con_rep+v["conteo"]
              
               
-              #Detección de mueletillas
+              # Fillers detection
               for f in filles_dictionary:
                   if f in speech_transcription:
                       fillers_l.append({"muletilla":f, "conteo":speech_transcription.count(f)})
 
-              #Conteo de muletillas
+              # Filler count
               for m in fillers_l:
                   num_muletillas_con_rep=num_muletillas_con_rep+m["conteo"]
               
               
-              #Detección de términos de concreción
+              # Detection of terms of concreteness
               for ct in concretion_dictionary:
                 for t in ct['terminos']:
                   if speech_transcription.count(t) > 0 :
                     concretion_l.append({'termino':t, 'conteo':speech_transcription.count(t)})
               
-              #Conteo de términos de concreción
+              # Counting terms of concretion
               for ct in concretion_l:
                 num_term_concrecion_con_rep = num_term_concrecion_con_rep+ct['conteo']
 
-              #Detección de términos de respeto
+              # Detection of terms of respect
               respect_terms_l = {'saludo':[s for s in respect_dictionary['saludo'] if s in speech_transcription], 'despedida':[d for d in respect_dictionary['despedida'] if d in speech_transcription]}
               
-              #Detección de términos de orden
+              # Order term detection
               order_terms_l = {'inicio':[o for o in order_dictionary['inicio'] if o in speech_transcription],
               'intermedio':[o for o in order_dictionary['intermedio'] if o in speech_transcription],
               'final':[o for o in order_dictionary['final'] if o in speech_transcription]}
 
-              #Tribunales amigables
+              
               try:
                 speech_l = {'verguenza':[v for v in speech_dictionary['verguenza'] if v in speech_transcription],
                             'negacion':[v for v in speech_dictionary['negacion'] if v in speech_transcription],
@@ -428,7 +421,6 @@ def elementos_transcripcion(person_folder, person_id, duration, transcription_la
             "concrecion":concretion_l ,
             "terminos_respeto": respect_terms_l,
             "terminos_orden": order_terms_l,
-            #"elementos_discurso": speech_l,
             "duracion_minutos":duracion_minutos}
     return metricas_texto
 
@@ -457,30 +449,31 @@ def silabas(transcription):
 
 def extraccion_temas(person_id,person_folder, tema):
   inicio_extr_temas = time.time()
-  #Detectar si el fichero de temas ya existe
+  # Detect if the topic file already exists
   temas_json = os.path.join(person_folder, person_id + '_topics.json')
   if os.path.exists(temas_json)==False:
-    #Crear el diccionario para almacenar los temas
+    # Create the dictionary to store the topics
     temas_dict = {'EUROVOC':{'category_list':[]}}
-    #Leer el fichero de transcripción
+    # Read the transcription file
     json_transcripcion = os.path.join(person_folder, person_id+'_transcription.json')
     with open(json_transcripcion, "r") as rf:
       decoded_data = json.load(rf)
     
-    #Usamos el texto para detectar los temas
+    # Using text to detect topics
     transcripcion = decoded_data ['text']
 
-    #Extraer los temas usando la API de ChatGPT
+    # Extracting topics using the ChatGPT API
     temas = extraccion_temas_gpt(transcripcion, tema)
-    #Convertir el texto a un diccionario
+    # Convert text to a dictionary
     temas = json.loads(temas)
     temas_dict['EUROVOC']['category_list'] = temas
 
     """
-    #Usamos el idioma para indicar el modelo de meaningcloud a utilizar
+    # Use the language to indicate the MeaningCloud model to be used (it is just an alternative to GPT)
+    # If MeaningCloud is used, an APIKey is required
     idioma_transcripcion = decoded_data['language']
     modelos = diccionarios[idioma_transcripcion][2]['models_text_classification']
-    #Se obtienen los temas según los modelos
+    # The topics are obtained according to the models
     for modelo in modelos:
       header = parse.urlencode({'key':meaning_cloud_api_key,
                               'model': modelo,
@@ -520,18 +513,18 @@ def extraccion_temas_gpt(transcripcion, tema):
 
 def analisis_sentimientos(person_id,person_folder):
   inicio_analisis_sentimientos = time.time()
-  #Detectar si el fichero de temas ya existe
+  # Detect if the topics file already exists
   analisis_sentimientos_json = os.path.join(person_folder, person_id + '_analisis_sentimientos.json')
   if os.path.exists(analisis_sentimientos_json)==False:
-    #Leer el fichero de transcripción
+    # Read the transcription file
     json_transcripcion = os.path.join(person_folder, person_id+'_transcription.json')
     with open(json_transcripcion, "r") as rf:
       decoded_data = json.load(rf)
     
-    #Usamos el texto para detectar los temas
+    # Using text to detect topics
     transcripcion = decoded_data ['text']
     
-    #Consulta a la API de MeaningCloud
+    # MeaningCloud API Query
     header = parse.urlencode({'key':meaning_cloud_api_key,
                               'model': 'general',
                               'txt':transcripcion}).encode()
@@ -541,7 +534,7 @@ def analisis_sentimientos(person_id,person_folder):
         resultado_analisis_sentimientos.pop('status')
     
     
-    #Se escribe el fichero de temas
+    # The topics file is written
     with open(analisis_sentimientos_json, "w") as outfile:
         json.dump(resultado_analisis_sentimientos, outfile, ensure_ascii= False)
         print("El fichero de análisis de sentimientos se ha creado")

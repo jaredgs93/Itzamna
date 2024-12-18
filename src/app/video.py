@@ -3,7 +3,7 @@ from keras.models import load_model
 import cv2
 from deepface import DeepFace
 
-#Bibliotecas para la evaluación del tiempo de ejecución
+# Runtime Evaluation Libraries
 import time
 import datetime
 
@@ -13,13 +13,13 @@ import json
 import numpy as np
 import random
 
-#Importar módulo de detección de miradas y parpadeos
+# Import of the Blink and Gaze Detection Module
 import sys
 base_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(base_path, 'gaze-tracking/'))
 import module as m
 
-#Folder de los modelos
+# Models folder
 base_path = os.path.dirname(os.path.abspath(__file__))
 models_folder = os.path.join(base_path, 'models')
 
@@ -31,7 +31,7 @@ smileCascade = cv2.CascadeClassifier(os.path.join(models_folder, 'haarcascade_sm
 
 def evaluacion_video(person_folder, person_id, video_url, duration):
   print('***Video analysis***')
-  #Usar el JSON con los metadatos del video para detectar si se debe rotar
+  # Use the JSON with the video metadata to detect if it should be rotated
   metadata_json = os.path.join(person_folder, person_id + '_metadata.json')
   inicio_ev_video = time.time()
   metricas_video = os.path.join(person_folder, person_id + '_faces_smiles.json')
@@ -57,7 +57,7 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
     emociones = []
     detection_output=[]
     rotation_degrees=0
-    #Detectar si se debe rotar el video
+    # Detect if video should be rotated
     with open(metadata_json) as json_file:  
         metadata = json.load(json_file)
     try:
@@ -65,7 +65,7 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
     except:
       pass
 
-    #Abrir el video
+    # Reading video
     
     count=0
     frames_p_seg = round(video.get(cv2.CAP_PROP_FPS),0)
@@ -76,20 +76,20 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
 
     center = (width / 2, height / 2)
 
-    #Evaluando un frame por segundo
-    #Para los frames donde se obtendrán las métricas
-    #Inicio segundo inicia en -frames_p_seg pues este incrementa según el número de frames p seg del video
+    # Evaluating one frame per second
+    # For the frames where the measures will be obtained
+    # Inicio segundo starts at -frames_p_seg as this increments according to the number of frames p sec of the video
     inicio_segundo = frames_p_seg*-1
-    #Final segund oinicia en -1 pues este incrementa según el número de frames p seg del video
+    # final_segundo starts at -1 as it increases according to the number of frames p sec of the video
     final_segundo = -1
-    #Nos indica qué número de frame es en el segundo. El valor máximo es la tasa de frames 
+    # It indicates what the frame number is in the second. The maximum value is the frame rate.
     #frame_en_el_segundo = 0
-    #Obtenemos las posiciones alteatorias de los frames a evaluar y se almacenan en una lista
+    # Get the alteatory positions of the frames to be evaluated and store them in a list
     frames_a_evaluar = []
     for second in range(int(duration)):
-      #Inicio segundo indica el primer frame del segundo en cuestión
+      # inicio_segundo indicates the first frame of the second in question
       inicio_segundo+=frames_p_seg
-      #Final segundo indica el último frame del segundo en cuestión
+      # final_segundo indicates the last frame of the second in question
       final_segundo+=frames_p_seg
       frames_a_evaluar.append(random.randint(inicio_segundo, final_segundo))
       
@@ -99,13 +99,8 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
         if fae >= 0 & fae <= frame_count:
           video.set(cv2.CAP_PROP_POS_FRAMES,fae)
         while True:
-            #while video.isOpened():
+           
                 ret, frame = video.read() 
-                
-                #count+=1
-                #frame_en_el_segundo+=1
-                
-                #if count==frame_a_evaluar:
                 
                 frame_details={}
                 frame_details["frame"]="frame%d"%fae
@@ -116,48 +111,30 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
                 gaze_label = 'Unknown'
                 blinking = False
 
-                ## Read video frames and convert to grayscale
-                #_, frame = video.read()
-                
                 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                
-                
-                
-                
                 
 
                 if rotation_degrees == 90 or rotation_degrees==-90:  
                   frame = cv2.rotate(frame, cv2.ROTATE_180)
                   gray = cv2.rotate(gray, cv2.ROTATE_180)
-                """if rotation_degrees == 270:
-                  frame = cv2.rotate(frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
-                  gray = cv2.rotate(gray, cv2.ROTATE_90_COUNTERCLOCKWISE)"""
-                """frameImageFileName = person_folder + person_id + '_frame%d.jpg'%fae
-                cv2.imwrite(frameImageFileName, frame)"""
-                #frame_sin_cuadros = frame.copy()
-                ### 3. Find areas with faces using Haar cascade classifier
+                
+                ### Find areas with faces using Haar cascade classifier
                 faces = faceCascade.detectMultiScale(image= gray, scaleFactor= 1.1, minNeighbors= 4)
                 # scaleFactor: how much the image size is reduced at each image scale
                 # minNeighbors: how many neighbors each candidate rectangle should have to retain it
 
                 # x, y coordinates, w (weight) and h (height) of each "face" rectangle in frame
-
-
-                #if (count%frames_p_seg==0 or count==1 or count==frame_count) and count<=frame_count:
+                
                 try:
-                  #cv2_imshow(frame)
                   analyze = DeepFace.analyze(frame, actions = ['emotion'], prog_bar=False)
                   emociones.append(analyze)
                 except:
-                  #if count==1:
-                    #cv2_imshow(frame)
                   pass
-                """if count>frame_count:
-                  break"""
+
 
                 for (x, y, w, h) in faces:
                     eyes_list = []
-                    # input, point1, point2, color, thickness=2    
+                   
                     cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
                     # Get the region of interest: face rectangle sub-image in gray and colored
                     faceROIGray = gray[y: y+h, x: x+w]
@@ -165,7 +142,7 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
                     
 
 
-                    ### 4. Find areas with eyes in faces using Haar cascade classifier
+                    ### Find areas with eyes in faces using Haar cascade classifier
                     eyes = eyeCascade.detectMultiScale(faceROIGray)
                     
                     width = np.size(faceROIColored, 1)
@@ -183,7 +160,7 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
                     
                     if len(eyes_list)==1 or len(eyes_list)==2:
                         faces_list.append({"y_min":int(y),"y_max":int(y+h),"x_min":int(x),"x_max":int(x+w)})
-                        #Detectar mirada
+                        # Detecting gaze
                         image, face = m.faceDetector(frame, gray)
                         if face is not None:
                           try:
@@ -214,11 +191,7 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
                           except Exception as e:
                             print(e)
                             pass
-
-
-
-
-                        
+   
                     smiles = smileCascade.detectMultiScale(faceROIGray, 4, 25)
                     for (sx, sy,sw,sh) in smiles:
                         if sy > height / 2:
@@ -231,25 +204,12 @@ def evaluacion_video(person_folder, person_id, video_url, duration):
                     frame_details["eyes"] = eyes_list
                     frame_details["smiles"] = smiles_list
                     frame_details["gaze"] = gaze_label
-                    #frame_details["blink"]=blinking
-
-                
-                #name = "frame%d"%count
-                
-                
-
-                
+                   
                 detection_output.append(frame_details)
                 
                 fin_frame=True
                 if fin_frame==True:
                   break
-                """if frame_en_el_segundo==frames_p_seg:
-                  frame_en_el_segundo=0
-                  inicio_segundo+=frames_p_seg
-                  #mitad_segundo+=frames_p_seg
-                  final_segundo+=frames_p_seg
-                  frame_a_evaluar = random.randint(inicio_segundo, final_segundo)"""
       except Exception as e:
         print(e)
         pass        

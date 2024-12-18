@@ -1,10 +1,9 @@
-#Importación de bibliotecas
 from decouple import config
 from openai import OpenAI
 
 client = OpenAI(api_key = config('OPENAI_API_KEY'))
 
-#Función para la generación del reporte
+# Function for English translation using the OpenAI API
 def translator(original_text):
     completion = client.chat.completions.create(
             messages = [{'role': 'system', 'content' : """Acts as a translator. You will receive a text and you must translate it into English"""},
