@@ -171,7 +171,7 @@ docker-compose down
   - `localhost` if running locally.
   - The public IP address or domain name of the server if running remotely (e.g., `http://123.45.67.89:8502`).
 #### 2. Upload a Video
-- Enter the video URL you want to evaluate. The URL must point directly to a video file and end with the file extension (e.g., `.mp4`, `.mov`, etc.).
+- Enter the video URL you want to evaluate. The URL must point directly to a video file and end with the file extension (e.g., `.mp4`, `.mov`, etc.). **The minimum dimensions of the video must be 1280 x 720 and the duration must be between 30 and 210 seconds. The video should include close-up shots of a person making a speech, which, for best results, should be in Spanish or English.**
 - Provide the topic for evaluation in the text input field.
 - Click **Upload Video URL** to start the evaluation process.
 
