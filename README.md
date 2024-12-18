@@ -7,6 +7,7 @@ This repository provides a system for evaluating skills using a multimodal appro
 
 ![overview](https://github.com/user-attachments/assets/2a532cd1-4a4c-4237-ba7c-39bbe4cf3603)
 
+---
 
 ## Table of Contents
 
@@ -15,6 +16,7 @@ This repository provides a system for evaluating skills using a multimodal appro
 3. [System Composition with Docker](#system-composition-with-docker)
 4. [Building and Running the Docker Image](#building-and-running-the-docker-image)
 5. [How to Use](#how-to-use)
+6. [API Endpoints](#api-endpoints)
 ---
 ## Project Structure
 The repository is organized as follows:
@@ -212,6 +214,97 @@ Below that, you can view the detailed report of the results. You can also:
 #### 3. Save the Rule
 - Click the "Save Rule" button to store the new rule.
 - A confirmation message, "Rule saved successfully!", will appear upon successful saving.
+
+---
+
+## API Endpoints
+Below is a list of available API endpoints with their descriptions, example requests, and expected input:
+
+### 1. GET /antecedents
+Retrieve the list of antecedents for rule creation.
+
+**Example Request**
+```bash
+curl -X 'GET' \
+  'http://<SERVER_IP>:8000/antecedents' \
+  -H 'accept: application/json'
+```
+
+### 2. GET /consequents
+Retrieve the list of consequents for rule creation.
+
+**Example Request**
+```bash
+curl -X 'GET' \
+  'http://<SERVER_IP>:8000/consequents' \
+  -H 'accept: application/json'
+```
+
+### 3. POST /create_rule
+Create a new rule based on the specified antecedent, consequent, and consequent value.
+
+**Request Body**
+```bash
+{
+  "antecedent": "string",
+  "consequent": "string",
+  "consequent_value": "string"
+}
+```
+**Example Request**
+```bash
+curl -X 'POST' \
+  'http://<SERVER_IP>:8000/create_rule' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "antecedent": "IF organization [High] AND mood[Passionately]",
+    "consequent": "firmness",
+    "consequent_value": "High"
+}'
+```
+### 4. POST /check_video_eligibility
+Check if a video meets the eligibility criteria for evaluation.
+
+**Request Body**
+```bash
+{
+  "video_url": "string",
+  "topic": "string"
+}
+```
+**Example Request**
+```
+curl -X 'POST' \
+  'http://<SERVER_IP>:8000/check_video_eligibility' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "video_url": "http://<SERVER_IP>/video/speech.mp4",
+    "topic": "Research in computer science"
+}'
+```
+
+### 5. POST /evaluate_skills
+
+Evaluate the transversal skills from the given video.
+
+**Request Body**
+```bash
+{
+  "video_url": "string",
+  "topic": "string"
+}
+```
+**Example Request**
+```
+curl -X 'POST' \
+  'http://<SERVER_IP>:8000/evaluate_skills' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "video_url": "http://<SERVER_IP>/video/speech.mp4",
+    "topic": "Research in computer science"
+}'
+```
+---
 
 ## License
 
