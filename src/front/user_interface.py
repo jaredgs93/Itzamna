@@ -14,8 +14,8 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 from decouple import config
 
-#BASE_URL = "http://api:8000"
-BASE_URL = "http://localhost:8000"  # Change to your API URL
+BASE_URL = "http://api:8000"
+
 
 # API Endpoint
 api_url_evaluate = f"{BASE_URL}/evaluate_skills"
