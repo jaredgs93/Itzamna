@@ -14,7 +14,8 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 from decouple import config
 
-BASE_URL = "http://api:8000"
+#BASE_URL = "http://api:8000"
+BASE_URL = "http://localhost:8000"  # Change to your API URL
 
 # API Endpoint
 api_url_evaluate = f"{BASE_URL}/evaluate_skills"
@@ -133,7 +134,7 @@ def page_processing():
             nombre = metrica.replace("_", " ").capitalize()
             col2.progress(
                 st.session_state["details"][metrica]["score"] / 10,
-                text=f"{nombre}: {st.session_state['details'][metrica]['label']}",
+                text=f"{nombre}: {st.session_state['details'][metrica]['label']} ({round(st.session_state['details'][metrica]['score'],1)}/10)",
             )
 
     st.subheader("📁 Detailed report")
