@@ -12,11 +12,12 @@ This repository provides a system for evaluating skills using a multimodal appro
 ## Table of Contents
 
 1. [Project Structure](#project-structure)
-2. [Prerequisites](#prerequisites)
-3. [System Composition with Docker](#system-composition-with-docker)
-4. [Building and Running the Docker Image](#building-and-running-the-docker-image)
-5. [How to Use](#how-to-use)
-6. [API Endpoints](#api-endpoints)
+2. [How Skills Are Evaluated](#how-skills-are-evaluated)
+3. [Prerequisites](#prerequisites)
+4. [System Composition with Docker](#system-composition-with-docker)
+5. [Building and Running the Docker Image](#building-and-running-the-docker-image)
+6. [How to Use](#how-to-use)
+7. [API Endpoints](#api-endpoints)
 ---
 ## Project Structure
 The repository is organized as follows:
@@ -62,7 +63,7 @@ src/
       - `user_interface.py`: A Streamlit interface for uploading videos, processing them, and generating evaluation reports.
 
 ---
-## How are the skills evaluated?
+## How Skills Are Evaluated
 Each transversal skill in Itzamna is evaluated using a Granular Linguistic Model of Phenomena (GLMP), a fuzzy logic-based framework designed for interpretable and layered assessment. This model organises the evaluation process hierarchically across four levels:
 1. Transversal Skill: The high-level competency being assessed.
 2. Dimensions: Core aspects that define the skill and reflect broader behavioural tendencies.
