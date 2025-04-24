@@ -1,7 +1,7 @@
 # Itzamna
 A Multimodal Artificial Intelligence Platform for Comprehensive Transversal Skills Evaluation
 
-This repository provides a system for evaluating skills using a multimodal approach. It includes a REST API and two Streamlit-based user interfaces:
+This repository provides a system for evaluating skills using a multimodal approach. It includes a REST API and two Streamlit-based user interfaces for evaluating decision-making, negotiation, leadership, stress control, creativity and self-steem:
 1. **User Interface for Video Evaluation**: Allows users to upload videos, process them, and generate detailed evaluation reports. These reports can be downloaded as PDFs or sent via email.
 2. **Rules Creation Interface**: Enables users to create and manage evaluation rules, defining the antecedents and consequents for skill assessment.
 
@@ -60,6 +60,82 @@ src/
    - `front/`:
       - `rules_creation.py`: A Streamlit interface for creating and managing evaluation rules.
       - `user_interface.py`: A Streamlit interface for uploading videos, processing them, and generating evaluation reports.
+
+---
+## How are the skills evaluated?
+Each transversal skill in Itzamna is evaluated using a Granular Linguistic Model of Phenomena (GLMP), a fuzzy logic-based framework designed for interpretable and layered assessment. This model organises the evaluation process hierarchically across four levels:
+1. Transversal Skill: The high-level competency being assessed.
+2. Dimensions: Core aspects that define the skill and reflect broader behavioural tendencies.
+3. Attributes: Specific behavioural expressions or tendencies that contribute to each dimension.
+4. Measures: Quantitative indicators extracted from audio, text, or video input
+
+### Measures Catalogue by Modality
+The evaluation of transversal skills in Itzamna relies on behavioural measures extracted from three main modalities. These measures are mapped to fuzzy labels and contribute to higher-level dimensions and skills.
+
+This system uses 26 behavioural measures grouped by modality. Each measure is quantified and normalised into a predefined scale.
+
+| **Modality** | **Measure**           | **Description** | **Scale** |
+|--------------|-----------------------|------------------|-----------|
+| **Audio**    | Consistency           | Absence of long pauses or hesitations in speech. Ratio of pause time over total time. | [0,10] |
+|              | Fluency               | Number of pauses and interruptions per minute. | [0,50] |
+|              | Mood                  | Vocal tone detection: reading, neutral, passionate. | [0,2] |
+|              | Noise                 | Detection of background or external sounds (e.g., throat clearing). Ratio of noise presence. | [0,10] |
+|              | Reaction time         | Time taken to begin speaking after a stimulus, in seconds. | [0,4] |
+|              | Speech speed          | Number of syllables per second. | [0,8] |
+|              | Voice uniformity      | Corrected for average pitch and variation, complementing mood detection. | [0,10] |
+| **Text**     | Concreteness          | Number of argumentative, reinforcing or concrete linguistic markers per minute relative to topics. | [0,10] |
+|              | Congruence            | Semantic consistency across topics. Avoids unrelated or mixed subjects. | [0,10] |
+|              | Crutches              | Use of filler words in the text per minute. | [0,10] |
+|              | Density               | Number of topics discussed, scaled logarithmically. | [0,10] |
+|              | Examples              | Number of adjectives/examples accompanying the explanation per minute. | [0,50] |
+|              | Order                 | Detection and sequencing of discourse markers (e.g., beginning, body, conclusion). | [0,10] |
+|              | Organization          | Use of discourse connectors (normalised per minute). | [0,10] |
+|              | Originality           | Use of uncommon or topic-specific vocabulary. Ratio of low-frequency words. | [0,10] |
+|              | Quantity              | Number of relevant topics addressed. | [0,10] |
+|              | Redundancy            | Frequency of repeated content (excluding stop words). | [0,10] |
+|              | Respect               | Appropriate, polite, and socially acceptable language. Includes greetings/farewells. | [0,10] |
+|              | Topic adequacy        | Relevance and thematic alignment between the speech and the original questions. | [0,10] |
+|              | Vagueness             | Use of ambiguous or imprecise expressions. | [0,10] |
+|              | Verbal tense          | Percentage of verbs used in the present tense over total verbs. | [0,10] |
+| **Video**    | Blinking              | Frequency of blinking per minute, as a stress indicator. (Capped at 10). | [0,10] |
+|              | Gaze                  | Ratio of focused gazes over total gaze movements. | [0,10] |
+|              | Gesture               | Balance between positive, negative, and stress gestures. Computed as (10 - ratio of neg/pos expressions). | [0,10] |
+|              | Posture changes       | Number of head or body shifts per minute (horizontal, vertical, focal). | [0,10] |
+|              | Smile                 | Proportion of frames where a smile is detected. | [0,10] |
+
+Each of these measures is automatically transformed into **linguistic labels** (e.g., *Low*, *Medium*, *High*) based on its defined scale. These labels are then processed through fuzzy logic rules to compute **attributes**, which are intermediate behavioural constructs.
+
+Subsequently, **attributes are aggregated to form dimensions**, and **dimensions are combined to generate the final evaluation for each transversal skill**.
+
+While the original measures may use different scales, **attributes, dimensions, and skills are all normalised to a [0,10] scale**, ensuring consistency and interpretability across the entire assessment framework.
+
+
+### Evaluated Transversal Skills
+Itzamna currently assesses six transversal skills using structured fuzzy models. Each skill is represented as a hierarchical diagram detailing its structure for evaluation. These models ensure transparency and interpretability, and can be adapted or extended based on specific application needs.
+
+#### 1. Decision-making 
+Focuses on the user's ability to express ideas clearly, maintain conciseness, and convey firmness in their responses. 
+![skill_1-decision_making](https://github.com/user-attachments/assets/481fd0ed-e680-4ced-98f0-4fc965692f1e)
+
+#### 2. Negotiation
+Assesses argumentation quality, expression clarity, and non-verbal empathy during interactive discourse.
+![skill_2-negotiation](https://github.com/user-attachments/assets/96975414-6d71-42d1-80f2-d56c3482b346)
+
+#### 3. Leadership
+Evaluates confidence, persuasive clarity, and coherence in delivery, including non-verbal assertiveness.
+![skill_3-leadership](https://github.com/user-attachments/assets/87d13c7f-091c-4f85-aae1-0a1a79bbb3ad)
+
+#### 4. Stress Control
+Monitors nervousness, consistency in communication, and control of body language under pressure.
+![skill_4-stress_control](https://github.com/user-attachments/assets/d0c61ccd-b04b-4eac-a452-0544a69a9e3d)
+
+#### 5. Creativity
+Measures originality, lexical richness, idea generation, and expressive variety across modalities.
+![skill_5-creativity](https://github.com/user-attachments/assets/6b7ac41b-0a43-4952-9098-47d871e5a016)
+
+#### 6. Self-esteem
+Analyses indicators of self-confidence and emotional tone through posture, fluency, and expressive content.
+![skill_6-self_esteem](https://github.com/user-attachments/assets/c4fd613f-1c25-4a6b-85f1-a70cc0703f7d)
 
 ---
 ## Prerequisites
