@@ -18,6 +18,7 @@ This repository provides a system for evaluating skills using a multimodal appro
 5. [Building and Running the Docker Image](#building-and-running-the-docker-image)
 6. [How to Use](#how-to-use)
 7. [API Endpoints](#api-endpoints)
+8. [Performance and Resource Requirements](#performance_and_resource_requirements)
 ---
 ## Project Structure
 The repository is organized as follows:
@@ -381,6 +382,42 @@ curl -X 'POST' \
     "topic": "Research in computer science"
 }'
 ```
+---
+
+## Performance and Resource Requirements
+
+To validate the system’s scalability and suitability for real-world deployment, a series of performance benchmarks were conducted using a Linode dedicated server with the following specifications:
+
+- **RAM:** 8 GB  
+- **CPU:** 4 virtual cores  
+- **Disk:** 160 GB SSD  
+- **Bandwidth:** 40 Gbps (in) / 5 Gbps (out)  
+
+### Resource Usage
+
+The system loads all necessary components—such as Whisper, DeepFace, and transformer-based language models—at runtime. Initialisation requires approximately **5.94 GB of memory**, with **peak memory usage staying below 8 GB** during evaluation. Memory is released upon completion of each task. CPU usage peaks at **65% during system loading**, and remains below **25% while processing** a video.
+
+### Processing Time
+
+Input videos ranged between **1.5 and 3 minutes** in length. The **average evaluation time per video** (from data loading to final report generation) was approximately **72 seconds** under sequential execution.
+
+### Disk Usage
+
+The system requires approximately **12.9 GB** of disk space for model files and dependencies. Each video evaluation temporarily uses **15–18 MB** of disk space for intermediate processing files. Videos uploaded in unsupported formats are automatically converted to `.mp4`, adding minimal extra disk usage.
+
+### Memory Usage Snapshot
+
+| Evaluation Step      | Memory Usage (GB) |
+|----------------------|-------------------|
+| System Initialisation| 5.94              |
+| Evaluation #1        | 6.72              |
+| Evaluation #2        | 6.65              |
+| Evaluation #3        | 6.60              |
+| Evaluation #4        | 6.74              |
+| Evaluation #5        | 6.72              |
+| Final Memory State   | 5.92              |
+
+> All memory values were obtained using the `psutil` library on Linux under Python 3.10.
 ---
 
 ## License
