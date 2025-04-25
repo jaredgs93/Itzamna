@@ -1,0 +1,426 @@
+{
+  "id": "95cc0d0c-1eb0-11f0-a68d-1294a37afab3",
+  "report": "The evaluation of the video speech revealed several aspects related to decision making, negotiation, leadership, stress control, creativity, and self-esteem skills. Let's break down the evaluation results for each aspect and provide an explanation for the ratings given:\n\n1) Decision Making: Decision making was rated as high, with subcategories contributing to this assessment being conciseness and clarity. Conciseness scored high due to firmness in organization of ideas and a passionate mood, along with speed in speech delivery, fluency, and reaction time. Clarity was rated medium due to the low use of examples and filler words, but with low vagueness.\n\n2) Negotiation: Negotiation skills were rated as medium, with empathy being at a normal level, influenced by the scarcity of smiles, and centered gaze. However, argumentation scored well due to the expression and quality of arguments, with low vagueness and high fluency.\n\n3) Leadership: Leadership skills were assessed as normal/good, with leadership conciseness being high/medium owing to speed, accuracy, and density in speech delivery. Leadership security was medium/high due to gaze, vocal uniformity, and serenity. The quality of leadership argumentation was rated normal/good.\n\n4) Stress Control: Stress control was evaluated as high, focusing on nonverbal language, communication, and expression, with good nonverbal language including blinks, gaze, facial movements, and gestures, as well as effective communication with low filler words, high consistency in expressing ideas, and low noise in the video.\n\n5) Creativity: Creativity skills were deemed medium/low, influenced by text quality with average to poor vocabulary mastery but good organization of ideas. Nonverbal language was good, considering blinks, gaze, facial movements, and gestures.\n\n6) Self-esteem: Self-esteem was rated as high, with security in expression and body position contributing to this assessment. Security in expression was high due to text and audio security, with a relevant topic, low filler words, and low vagueness. Body position scored well due to centered gaze and few posture changes.\n\nIn conclusion, the overall evaluation of the individual's transversal skills indicates strengths in decision making, stress control, and self-esteem, while showing potential for improvement in negotiation, creativity, and aspects of leadership. The person demonstrates effective decision-making abilities, a good level of stress control, and a high level of self-esteem, which are valuable skills in various professional and personal settings.",
+  "details": {
+    "decision_making": {
+      "label": "High",
+      "score": 7.92,
+      "details": [
+        {
+          "conciseness": {
+            "label": "High",
+            "score": 7.92,
+            "details": [
+              {
+                "firmness": {
+                  "label": "High",
+                  "score": 7.92,
+                  "details": [
+                    {
+                      "organization": {
+                        "label": "High/Medium",
+                        "score": 6.92
+                      }
+                    },
+                    {
+                      "mood": {
+                        "label": "Passionately",
+                        "score": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "speed": {
+                  "label": "High",
+                  "score": 7.8,
+                  "details": [
+                    {
+                      "speech_speed": {
+                        "label": "High/Medium",
+                        "score": 5.95
+                      }
+                    },
+                    {
+                      "fluency": {
+                        "label": "High/Medium",
+                        "score": 12
+                      }
+                    },
+                    {
+                      "reaction_time": {
+                        "label": "High",
+                        "score": 0.9
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "clarity": {
+            "label": "Medium",
+            "score": 5.0,
+            "details": [
+              {
+                "examples": {
+                  "label": "Low",
+                  "score": 10.0
+                }
+              },
+              {
+                "vagueness": {
+                  "label": "Low",
+                  "score": 0.0
+                }
+              },
+              {
+                "fillers": {
+                  "label": "Low",
+                  "score": 0.77
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "negotiation": {
+      "label": "Medium",
+      "score": 5.0,
+      "details": [
+        {
+          "argumentation": {
+            "label": "Good",
+            "score": 7.95,
+            "details": [
+              {
+                "expression": {
+                  "label": "Good/Normal",
+                  "score": 7.33
+                }
+              },
+              {
+                "argument_quality": {
+                  "label": "High",
+                  "score": 7.95,
+                  "details": [
+                    {
+                      "vagueness": {
+                        "label": "Low",
+                        "score": 0.0
+                      }
+                    },
+                    {
+                      "fluency": {
+                        "label": "High/Medium",
+                        "score": 12
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "empathy": {
+            "label": "Normal",
+            "score": 5.0,
+            "details": [
+              {
+                "gaze": {
+                  "label": "Centered",
+                  "score": 8.7
+                }
+              },
+              {
+                "smile": {
+                  "label": "Scarce",
+                  "score": 0.0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "leadership": {
+      "label": "Normal/Good",
+      "score": 6.15,
+      "details": [
+        {
+          "conciseness_in_leadership": {
+            "label": "High",
+            "score": 7.8,
+            "details": [
+              {
+                "speed": {
+                  "label": "High",
+                  "score": 7.8,
+                  "details": [
+                    {
+                      "speech_speed": {
+                        "label": "High/Medium",
+                        "score": 5.95
+                      }
+                    },
+                    {
+                      "fluency": {
+                        "label": "High/Medium",
+                        "score": 12
+                      }
+                    },
+                    {
+                      "reaction_time": {
+                        "label": "High",
+                        "score": 0.9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "density": {
+                  "label": "High",
+                  "score": 10
+                }
+              },
+              {
+                "accuracy": {
+                  "label": "High",
+                  "score": 7.82,
+                  "details": [
+                    {
+                      "originality": {
+                        "label": "High",
+                        "score": 8.0
+                      }
+                    },
+                    {
+                      "congruence": {
+                        "label": "High/Medium",
+                        "score": 7.32
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "security_in_leadership": {
+            "label": "Medium/High",
+            "score": 6.15,
+            "details": [
+              {
+                "gaze": {
+                  "label": "Centered",
+                  "score": 8.7
+                }
+              },
+              {
+                "voice_uniformity": {
+                  "label": "Medium/High",
+                  "score": 5.9
+                }
+              },
+              {
+                "serenity": {
+                  "label": "Medium",
+                  "score": 5.0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "argumentation_in_leadership": {
+            "label": "Normal/Good",
+            "score": 5.21
+          }
+        }
+      ]
+    },
+    "stress_control": {
+      "label": "High",
+      "score": 8.02,
+      "details": [
+        {
+          "non_verbal_language": {
+            "label": "Good",
+            "score": 8.5
+          }
+        },
+        {
+          "communication": {
+            "label": "Good",
+            "score": 8.05,
+            "details": [
+              {
+                "fillers": {
+                  "label": "Low",
+                  "score": 0.77
+                }
+              },
+              {
+                "consistency": {
+                  "label": "High",
+                  "score": 10.0
+                }
+              },
+              {
+                "noise": {
+                  "label": "Low",
+                  "score": 0.0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "expression": {
+            "label": "Good/Normal",
+            "score": 7.33
+          }
+        }
+      ]
+    },
+    "creativity": {
+      "label": "Medium/Low",
+      "score": 4.9,
+      "details": [
+        {
+          "text_quality": {
+            "label": "Medium/Low",
+            "score": 4.9,
+            "details": [
+              {
+                "vocabulary": {
+                  "label": "Normal/Bad",
+                  "score": 4.93
+                }
+              },
+              {
+                "ideas": {
+                  "label": "Good",
+                  "score": 9.0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "non_verbal_language": {
+            "label": "Good",
+            "score": 8.5
+          }
+        }
+      ]
+    },
+    "self_esteem": {
+      "label": "High",
+      "score": 7.95,
+      "details": [
+        {
+          "personal_security": {
+            "label": "High",
+            "score": 7.95,
+            "details": [
+              {
+                "expression_security": {
+                  "label": "High",
+                  "score": 7.95,
+                  "details": [
+                    {
+                      "text_security": {
+                        "label": "High",
+                        "score": 8.05,
+                        "details": [
+                          {
+                            "topic_adequacy": {
+                              "labe": "High",
+                              "score": 8.0
+                            }
+                          },
+                          {
+                            "vagueness": {
+                              "label": "Low",
+                              "score": 0.0
+                            }
+                          },
+                          {
+                            "fillers": {
+                              "label": "Low",
+                              "score": 0.77
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "audio_security": {
+                        "label": "High",
+                        "score": 7.8,
+                        "details": [
+                          {
+                            "reaction_time": {
+                              "label": "High",
+                              "score": 0.9
+                            }
+                          },
+                          {
+                            "fluency": {
+                              "label": "High/Medium",
+                              "score": 12
+                            }
+                          },
+                          {
+                            "speech_speed": {
+                              "label": "High/Medium",
+                              "score": 5.95
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "body_position": {
+                  "label": "Good",
+                  "score": 8.05,
+                  "details": [
+                    {
+                      "gaze": {
+                        "label": "Centered",
+                        "score": 8.7
+                      }
+                    },
+                    {
+                      "posture_changes": {
+                        "label": "Few",
+                        "score": 0.44
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "expression": {
+            "label": "Good/Normal",
+            "score": 7.33
+          }
+        }
+      ]
+    }
+  }
+}
