@@ -3,2581 +3,2581 @@
     "$oid": "6754a873489797b71da3280e"
   },
   "rule_id": 0,
-  "antecedente": "IF rapidez_del_habla[Baja] AND fluidez[Baja]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF rapidez_del_habla[Baja] AND fluidez[Baja]",
+  "consequent": "velocidad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3280f"
   },
   "rule_id": 1,
-  "antecedente": "IF rapidez_del_habla[Baja] AND fluidez[Media]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF rapidez_del_habla[Baja] AND fluidez[Media]",
+  "consequent": "velocidad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32810"
   },
   "rule_id": 2,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Baja]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Baja]",
+  "consequent": "velocidad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32811"
   },
   "rule_id": 3,
-  "antecedente": "IF rapidez_del_habla[Baja] AND fluidez[Alta]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Baja] AND fluidez[Alta]",
+  "consequent": "velocidad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32812"
   },
   "rule_id": 4,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Media]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Media]",
+  "consequent": "velocidad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32813"
   },
   "rule_id": 5,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Baja]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Baja]",
+  "consequent": "velocidad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32814"
   },
   "rule_id": 6,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Bajo]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Bajo]",
+  "consequent": "velocidad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32815"
   },
   "rule_id": 7,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Bajo]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Bajo]",
+  "consequent": "velocidad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32816"
   },
   "rule_id": 8,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Alta]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Alta]",
+  "consequent": "velocidad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32817"
   },
   "rule_id": 9,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Medio]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Medio]",
+  "consequent": "velocidad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32818"
   },
   "rule_id": 10,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Alto]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Alto]",
+  "consequent": "velocidad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32819"
   },
   "rule_id": 11,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Medio]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Medio]",
+  "consequent": "velocidad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3281a"
   },
   "rule_id": 12,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Alto]",
-  "consecuente": "velocidad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Alto]",
+  "consequent": "velocidad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3281b"
   },
   "rule_id": 13,
-  "antecedente": "IF organizacion[Baja] AND mood[Reading]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF organizacion[Baja] AND mood[Reading]",
+  "consequent": "firmeza",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3281c"
   },
   "rule_id": 14,
-  "antecedente": "IF organizacion[Baja] AND mood[Normal]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF organizacion[Baja] AND mood[Normal]",
+  "consequent": "firmeza",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3281d"
   },
   "rule_id": 15,
-  "antecedente": "IF organizacion[Media] AND mood[Reading]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF organizacion[Media] AND mood[Reading]",
+  "consequent": "firmeza",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3281e"
   },
   "rule_id": 16,
-  "antecedente": "IF organizacion[Baja] AND mood[Passionately]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Media"
+  "antecedent": "IF organizacion[Baja] AND mood[Passionately]",
+  "consequent": "firmeza",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3281f"
   },
   "rule_id": 17,
-  "antecedente": "IF organizacion[Media] AND mood[Normal]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Media"
+  "antecedent": "IF organizacion[Media] AND mood[Normal]",
+  "consequent": "firmeza",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32820"
   },
   "rule_id": 18,
-  "antecedente": "IF organizacion[Alta] AND mood[Reading]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Media"
+  "antecedent": "IF organizacion[Alta] AND mood[Reading]",
+  "consequent": "firmeza",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32821"
   },
   "rule_id": 19,
-  "antecedente": "IF organizacion[Media] AND mood[Passionately]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF organizacion[Media] AND mood[Passionately]",
+  "consequent": "firmeza",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32822"
   },
   "rule_id": 20,
-  "antecedente": "IF organizacion[Alta] AND mood[Normal]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF organizacion[Alta] AND mood[Normal]",
+  "consequent": "firmeza",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32823"
   },
   "rule_id": 21,
-  "antecedente": "IF organizacion[Alta] AND mood[Passionately]",
-  "consecuente": "firmeza",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF organizacion[Alta] AND mood[Passionately]",
+  "consequent": "firmeza",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32824"
   },
   "rule_id": 22,
-  "antecedente": "IF firmeza[Baja] AND velocidad[Baja]",
-  "consecuente": "concision",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF firmeza[Baja] AND velocidad[Baja]",
+  "consequent": "concision",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32825"
   },
   "rule_id": 23,
-  "antecedente": "IF firmeza[Baja] AND velocidad[Media]",
-  "consecuente": "concision",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF firmeza[Baja] AND velocidad[Media]",
+  "consequent": "concision",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32826"
   },
   "rule_id": 24,
-  "antecedente": "IF firmeza[Media] AND velocidad[Baja]",
-  "consecuente": "concision",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF firmeza[Media] AND velocidad[Baja]",
+  "consequent": "concision",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32827"
   },
   "rule_id": 25,
-  "antecedente": "IF firmeza[Baja] AND velocidad[Alta]",
-  "consecuente": "concision",
-  "consecuente_valor": "Media"
+  "antecedent": "IF firmeza[Baja] AND velocidad[Alta]",
+  "consequent": "concision",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32828"
   },
   "rule_id": 26,
-  "antecedente": "IF firmeza[Media] AND velocidad[Media]",
-  "consecuente": "concision",
-  "consecuente_valor": "Media"
+  "antecedent": "IF firmeza[Media] AND velocidad[Media]",
+  "consequent": "concision",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32829"
   },
   "rule_id": 27,
-  "antecedente": "IF firmeza[Alta] AND velocidad[Baja]",
-  "consecuente": "concision",
-  "consecuente_valor": "Media"
+  "antecedent": "IF firmeza[Alta] AND velocidad[Baja]",
+  "consequent": "concision",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3282a"
   },
   "rule_id": 28,
-  "antecedente": "IF firmeza[Media] AND velocidad[Alta]",
-  "consecuente": "concision",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF firmeza[Media] AND velocidad[Alta]",
+  "consequent": "concision",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3282b"
   },
   "rule_id": 29,
-  "antecedente": "IF firmeza[Alta] AND velocidad[Media]",
-  "consecuente": "concision",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF firmeza[Alta] AND velocidad[Media]",
+  "consequent": "concision",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3282c"
   },
   "rule_id": 30,
-  "antecedente": "IF firmeza[Alta] AND velocidad[Alta]",
-  "consecuente": "concision",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF firmeza[Alta] AND velocidad[Alta]",
+  "consequent": "concision",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3282d"
   },
   "rule_id": 31,
-  "antecedente": "IF ejemplos[Bajo] AND vaguedad[Media]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF ejemplos[Bajo] AND vaguedad[Media]",
+  "consequent": "claridad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3282e"
   },
   "rule_id": 32,
-  "antecedente": "IF ejemplos[Bajo] AND vaguedad[Alta]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF ejemplos[Bajo] AND vaguedad[Alta]",
+  "consequent": "claridad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3282f"
   },
   "rule_id": 33,
-  "antecedente": "IF ejemplos[Medio] AND vaguedad[Alta]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF ejemplos[Medio] AND vaguedad[Alta]",
+  "consequent": "claridad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32830"
   },
   "rule_id": 34,
-  "antecedente": "IF ejemplos[Alto] AND vaguedad[Alta]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF ejemplos[Alto] AND vaguedad[Alta]",
+  "consequent": "claridad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32831"
   },
   "rule_id": 35,
-  "antecedente": "IF (ejemplos[Bajo] AND vaguedad[Baja]) AND muletillas[Alta]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF (ejemplos[Bajo] AND vaguedad[Baja]) AND muletillas[Alta]",
+  "consequent": "claridad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32832"
   },
   "rule_id": 36,
-  "antecedente": "IF ejemplos[Medio] AND vaguedad[Media] AND muletillas[Alta]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF ejemplos[Medio] AND vaguedad[Media] AND muletillas[Alta]",
+  "consequent": "claridad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32833"
   },
   "rule_id": 37,
-  "antecedente": "IF ejemplos[Bajo] AND vaguedad[Baja] AND muletillas[Baja]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF ejemplos[Bajo] AND vaguedad[Baja] AND muletillas[Baja]",
+  "consequent": "claridad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32834"
   },
   "rule_id": 38,
-  "antecedente": "IF ejemplos[Medio] AND vaguedad[Media] AND muletillas[Baja]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF ejemplos[Medio] AND vaguedad[Media] AND muletillas[Baja]",
+  "consequent": "claridad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32835"
   },
   "rule_id": 39,
-  "antecedente": "IF ejemplos[Medio] AND vaguedad[Baja] AND muletillas[Alta]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF ejemplos[Medio] AND vaguedad[Baja] AND muletillas[Alta]",
+  "consequent": "claridad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32836"
   },
   "rule_id": 40,
-  "antecedente": "IF ejemplos[Alto] AND muletillas[Alta] AND vaguedad[Baja]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF ejemplos[Alto] AND muletillas[Alta] AND vaguedad[Baja]",
+  "consequent": "claridad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32837"
   },
   "rule_id": 41,
-  "antecedente": "IF ejemplos[Alto] AND muletillas[Alta] AND vaguedad[Media]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF ejemplos[Alto] AND muletillas[Alta] AND vaguedad[Media]",
+  "consequent": "claridad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32838"
   },
   "rule_id": 42,
-  "antecedente": "IF ejemplos[Medio] AND vaguedad[Baja] AND muletillas[Baja]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF ejemplos[Medio] AND vaguedad[Baja] AND muletillas[Baja]",
+  "consequent": "claridad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32839"
   },
   "rule_id": 43,
-  "antecedente": "IF ejemplos[Alto] AND muletillas[Baja] AND vaguedad[Baja]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF ejemplos[Alto] AND muletillas[Baja] AND vaguedad[Baja]",
+  "consequent": "claridad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3283a"
   },
   "rule_id": 44,
-  "antecedente": "IF ejemplos[Alto] AND muletillas[Baja] AND vaguedad[Media]",
-  "consecuente": "claridad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF ejemplos[Alto] AND muletillas[Baja] AND vaguedad[Media]",
+  "consequent": "claridad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3283b"
   },
   "rule_id": 45,
-  "antecedente": "IF concision[Baja] AND claridad[Baja]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF concision[Baja] AND claridad[Baja]",
+  "consequent": "decision_making",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3283c"
   },
   "rule_id": 46,
-  "antecedente": "IF concision[Baja] AND claridad[Media]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF concision[Baja] AND claridad[Media]",
+  "consequent": "decision_making",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3283d"
   },
   "rule_id": 47,
-  "antecedente": "IF concision[Media] AND claridad[Baja]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF concision[Media] AND claridad[Baja]",
+  "consequent": "decision_making",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3283e"
   },
   "rule_id": 48,
-  "antecedente": "IF concision[Baja] AND claridad[Alta]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF concision[Baja] AND claridad[Alta]",
+  "consequent": "decision_making",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3283f"
   },
   "rule_id": 49,
-  "antecedente": "IF concision[Media] AND claridad[Media]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF concision[Media] AND claridad[Media]",
+  "consequent": "decision_making",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32840"
   },
   "rule_id": 50,
-  "antecedente": "IF concision[Alta] AND claridad[Baja]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF concision[Alta] AND claridad[Baja]",
+  "consequent": "decision_making",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32841"
   },
   "rule_id": 51,
-  "antecedente": "IF concision[Media] AND claridad[Alta]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF concision[Media] AND claridad[Alta]",
+  "consequent": "decision_making",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32842"
   },
   "rule_id": 52,
-  "antecedente": "IF concision[Alta] AND claridad[Media]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF concision[Alta] AND claridad[Media]",
+  "consequent": "decision_making",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32843"
   },
   "rule_id": 53,
-  "antecedente": "IF concision[Alta] AND claridad[Alta]",
-  "consecuente": "decision_making",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF concision[Alta] AND claridad[Alta]",
+  "consequent": "decision_making",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32844"
   },
   "rule_id": 54,
-  "antecedente": "IF mirada[Difusa] AND sonrisa[Escasa]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Difusa] AND sonrisa[Escasa]",
+  "consequent": "empatia",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32845"
   },
   "rule_id": 55,
-  "antecedente": "IF mirada[Difusa] AND sonrisa[Normal]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Difusa] AND sonrisa[Normal]",
+  "consequent": "empatia",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32846"
   },
   "rule_id": 56,
-  "antecedente": "IF sonrisa[Frecuente] AND mirada[Difusa]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF sonrisa[Frecuente] AND mirada[Difusa]",
+  "consequent": "empatia",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32847"
   },
   "rule_id": 57,
-  "antecedente": "IF sonrisa[Escasa] AND mirada[Normal]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF sonrisa[Escasa] AND mirada[Normal]",
+  "consequent": "empatia",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32848"
   },
   "rule_id": 58,
-  "antecedente": "IF mirada[Normal] AND sonrisa[Normal]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF mirada[Normal] AND sonrisa[Normal]",
+  "consequent": "empatia",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32849"
   },
   "rule_id": 59,
-  "antecedente": "IF mirada[Normal] AND sonrisa[Frecuente]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF mirada[Normal] AND sonrisa[Frecuente]",
+  "consequent": "empatia",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3284a"
   },
   "rule_id": 60,
-  "antecedente": "IF sonrisa[Escasa] AND mirada[Centrada]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF sonrisa[Escasa] AND mirada[Centrada]",
+  "consequent": "empatia",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3284b"
   },
   "rule_id": 61,
-  "antecedente": "IF mirada[Centrada] AND sonrisa[Normal]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF mirada[Centrada] AND sonrisa[Normal]",
+  "consequent": "empatia",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3284c"
   },
   "rule_id": 62,
-  "antecedente": "IF mirada[Centrada] AND sonrisa[Frecuente]",
-  "consecuente": "empatia",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF mirada[Centrada] AND sonrisa[Frecuente]",
+  "consequent": "empatia",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3284d"
   },
   "rule_id": 63,
-  "antecedente": "IF vaguedad[Media] AND fluidez[Baja]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vaguedad[Media] AND fluidez[Baja]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3284e"
   },
   "rule_id": 64,
-  "antecedente": "IF vaguedad[Alta] AND fluidez[Media]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vaguedad[Alta] AND fluidez[Media]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3284f"
   },
   "rule_id": 65,
-  "antecedente": "IF vaguedad[Alta] AND fluidez[Baja]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vaguedad[Alta] AND fluidez[Baja]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32850"
   },
   "rule_id": 66,
-  "antecedente": "IF vaguedad[Baja] AND fluidez[Baja]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vaguedad[Baja] AND fluidez[Baja]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32851"
   },
   "rule_id": 67,
-  "antecedente": "IF vaguedad[Media] AND fluidez[Alta]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF vaguedad[Media] AND fluidez[Alta]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32852"
   },
   "rule_id": 68,
-  "antecedente": "IF vaguedad[Media] AND fluidez[Media]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF vaguedad[Media] AND fluidez[Media]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32853"
   },
   "rule_id": 69,
-  "antecedente": "IF vaguedad[Alta] AND fluidez[Alta]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF vaguedad[Alta] AND fluidez[Alta]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32854"
   },
   "rule_id": 70,
-  "antecedente": "IF vaguedad[Baja] AND fluidez[Alta]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF vaguedad[Baja] AND fluidez[Alta]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32855"
   },
   "rule_id": 71,
-  "antecedente": "IF vaguedad[Baja] AND fluidez[Media]",
-  "consecuente": "calidad_argumentacion",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF vaguedad[Baja] AND fluidez[Media]",
+  "consequent": "calidad_argumentacion",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32856"
   },
   "rule_id": 72,
-  "antecedente": "IF expresion[Mala] AND calidad_argumentacion[Baja]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF expresion[Mala] AND calidad_argumentacion[Baja]",
+  "consequent": "argumentacion",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32857"
   },
   "rule_id": 73,
-  "antecedente": "IF expresion[Mala] AND calidad_argumentacion[Media]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF expresion[Mala] AND calidad_argumentacion[Media]",
+  "consequent": "argumentacion",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32858"
   },
   "rule_id": 74,
-  "antecedente": "IF expresion[Mala] AND calidad_argumentacion[Alta]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF expresion[Mala] AND calidad_argumentacion[Alta]",
+  "consequent": "argumentacion",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32859"
   },
   "rule_id": 75,
-  "antecedente": "IF expresion[Normal] AND calidad_argumentacion[Baja]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF expresion[Normal] AND calidad_argumentacion[Baja]",
+  "consequent": "argumentacion",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3285a"
   },
   "rule_id": 76,
-  "antecedente": "IF expresion[Normal] AND calidad_argumentacion[Media]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF expresion[Normal] AND calidad_argumentacion[Media]",
+  "consequent": "argumentacion",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3285b"
   },
   "rule_id": 77,
-  "antecedente": "IF expresion[Buena] AND calidad_argumentacion[Baja]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF expresion[Buena] AND calidad_argumentacion[Baja]",
+  "consequent": "argumentacion",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3285c"
   },
   "rule_id": 78,
-  "antecedente": "IF expresion[Normal] AND calidad_argumentacion[Alta]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Buena"
+  "antecedent": "IF expresion[Normal] AND calidad_argumentacion[Alta]",
+  "consequent": "argumentacion",
+  "consequent_value": "Buena"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3285d"
   },
   "rule_id": 79,
-  "antecedente": "IF expresion[Buena] AND calidad_argumentacion[Media]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Buena"
+  "antecedent": "IF expresion[Buena] AND calidad_argumentacion[Media]",
+  "consequent": "argumentacion",
+  "consequent_value": "Buena"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3285e"
   },
   "rule_id": 80,
-  "antecedente": "IF expresion[Buena] AND calidad_argumentacion[Alta]",
-  "consecuente": "argumentacion",
-  "consecuente_valor": "Buena"
+  "antecedent": "IF expresion[Buena] AND calidad_argumentacion[Alta]",
+  "consequent": "argumentacion",
+  "consequent_value": "Buena"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3285f"
   },
   "rule_id": 81,
-  "antecedente": "IF empatia[Baja]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF empatia[Baja]",
+  "consequent": "negociacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32860"
   },
   "rule_id": 82,
-  "antecedente": "IF argumentacion[Mala] AND empatia[Normal]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF argumentacion[Mala] AND empatia[Normal]",
+  "consequent": "negociacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32861"
   },
   "rule_id": 83,
-  "antecedente": "IF argumentacion[Mala] AND empatia[Alta]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF argumentacion[Mala] AND empatia[Alta]",
+  "consequent": "negociacion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32862"
   },
   "rule_id": 84,
-  "antecedente": "IF empatia[Normal] AND argumentacion[Normal]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF empatia[Normal] AND argumentacion[Normal]",
+  "consequent": "negociacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32863"
   },
   "rule_id": 85,
-  "antecedente": "IF empatia[Normal] AND argumentacion[Buena]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF empatia[Normal] AND argumentacion[Buena]",
+  "consequent": "negociacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32864"
   },
   "rule_id": 86,
-  "antecedente": "IF empatia[Alta] AND argumentacion[Normal]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF empatia[Alta] AND argumentacion[Normal]",
+  "consequent": "negociacion",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32865"
   },
   "rule_id": 87,
-  "antecedente": "IF empatia[Alta] AND argumentacion[Buena]",
-  "consecuente": "negociacion",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF empatia[Alta] AND argumentacion[Buena]",
+  "consequent": "negociacion",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32866"
   },
   "rule_id": 88,
-  "antecedente": "IF muletillas[Baja] AND constancia[Baja] AND ruido[Alto]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF muletillas[Baja] AND constancia[Baja] AND ruido[Alto]",
+  "consequent": "comunicacion",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32867"
   },
   "rule_id": 89,
-  "antecedente": "IF muletillas[Alta] AND constancia[Baja]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF muletillas[Alta] AND constancia[Baja]",
+  "consequent": "comunicacion",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32868"
   },
   "rule_id": 90,
-  "antecedente": "IF muletillas[Alta] AND constancia[Media]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF muletillas[Alta] AND constancia[Media]",
+  "consequent": "comunicacion",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32869"
   },
   "rule_id": 91,
-  "antecedente": "IF muletillas[Alta] AND constancia[Alta] AND ruido[Alto]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF muletillas[Alta] AND constancia[Alta] AND ruido[Alto]",
+  "consequent": "comunicacion",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3286a"
   },
   "rule_id": 92,
-  "antecedente": "IF muletillas[Baja] AND constancia[Baja] AND ruido[Bajo]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF muletillas[Baja] AND constancia[Baja] AND ruido[Bajo]",
+  "consequent": "comunicacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3286b"
   },
   "rule_id": 93,
-  "antecedente": "IF muletillas[Baja] AND constancia[Baja] AND ruido[Medio]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF muletillas[Baja] AND constancia[Baja] AND ruido[Medio]",
+  "consequent": "comunicacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3286c"
   },
   "rule_id": 94,
-  "antecedente": "IF muletillas[Baja] AND constancia[Media]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF muletillas[Baja] AND constancia[Media]",
+  "consequent": "comunicacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3286d"
   },
   "rule_id": 95,
-  "antecedente": "IF constancia[Alta] AND ruido[Medio]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF constancia[Alta] AND ruido[Medio]",
+  "consequent": "comunicacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3286e"
   },
   "rule_id": 96,
-  "antecedente": "IF muletillas[Baja] AND constancia[Alta] AND ruido[Alto]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF muletillas[Baja] AND constancia[Alta] AND ruido[Alto]",
+  "consequent": "comunicacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3286f"
   },
   "rule_id": 97,
-  "antecedente": "IF muletillas[Alta] AND constancia[Alta] AND ruido[Bajo]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF muletillas[Alta] AND constancia[Alta] AND ruido[Bajo]",
+  "consequent": "comunicacion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32870"
   },
   "rule_id": 98,
-  "antecedente": "IF muletillas[Baja] AND constancia[Alta] AND ruido[Bajo]",
-  "consecuente": "comunicacion",
-  "consecuente_valor": "Buena"
+  "antecedent": "IF muletillas[Baja] AND constancia[Alta] AND ruido[Bajo]",
+  "consequent": "comunicacion",
+  "consequent_value": "Buena"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32871"
   },
   "rule_id": 99,
-  "antecedente": "IF adecuacion_al_tema[Baja] AND vaguedad[Media]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF adecuacion_al_tema[Baja] AND vaguedad[Media]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32872"
   },
   "rule_id": 100,
-  "antecedente": "IF adecuacion_al_tema[Baja] AND vaguedad[Alta]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF adecuacion_al_tema[Baja] AND vaguedad[Alta]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32873"
   },
   "rule_id": 101,
-  "antecedente": "IF adecuacion_al_tema[Media] AND vaguedad[Alta]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF adecuacion_al_tema[Media] AND vaguedad[Alta]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32874"
   },
   "rule_id": 102,
-  "antecedente": "IF adecuacion_al_tema[Alta] AND vaguedad[Alta]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF adecuacion_al_tema[Alta] AND vaguedad[Alta]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32875"
   },
   "rule_id": 103,
-  "antecedente": "IF (adecuacion_al_tema[Baja] AND vaguedad[Baja]) AND muletillas[Alta]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF (adecuacion_al_tema[Baja] AND vaguedad[Baja]) AND muletillas[Alta]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32876"
   },
   "rule_id": 104,
-  "antecedente": "IF adecuacion_al_tema[Media] AND vaguedad[Media] AND muletillas[Alta]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF adecuacion_al_tema[Media] AND vaguedad[Media] AND muletillas[Alta]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32877"
   },
   "rule_id": 105,
-  "antecedente": "IF adecuacion_al_tema[Baja] AND vaguedad[Baja] AND muletillas[Baja]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF adecuacion_al_tema[Baja] AND vaguedad[Baja] AND muletillas[Baja]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32878"
   },
   "rule_id": 106,
-  "antecedente": "IF adecuacion_al_tema[Media] AND vaguedad[Media] AND muletillas[Baja]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF adecuacion_al_tema[Media] AND vaguedad[Media] AND muletillas[Baja]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32879"
   },
   "rule_id": 107,
-  "antecedente": "IF adecuacion_al_tema[Media] AND vaguedad[Baja] AND muletillas[Alta]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF adecuacion_al_tema[Media] AND vaguedad[Baja] AND muletillas[Alta]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3287a"
   },
   "rule_id": 108,
-  "antecedente": "IF adecuacion_al_tema[Alta] AND muletillas[Alta] AND vaguedad[Baja]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF adecuacion_al_tema[Alta] AND muletillas[Alta] AND vaguedad[Baja]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3287b"
   },
   "rule_id": 109,
-  "antecedente": "IF adecuacion_al_tema[Alta] AND muletillas[Alta] AND vaguedad[Media]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF adecuacion_al_tema[Alta] AND muletillas[Alta] AND vaguedad[Media]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3287c"
   },
   "rule_id": 110,
-  "antecedente": "IF adecuacion_al_tema[Media] AND vaguedad[Baja] AND muletillas[Baja]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF adecuacion_al_tema[Media] AND vaguedad[Baja] AND muletillas[Baja]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3287d"
   },
   "rule_id": 111,
-  "antecedente": "IF adecuacion_al_tema[Alta] AND muletillas[Baja] AND vaguedad[Baja]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF adecuacion_al_tema[Alta] AND muletillas[Baja] AND vaguedad[Baja]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3287e"
   },
   "rule_id": 112,
-  "antecedente": "IF adecuacion_al_tema[Alta] AND muletillas[Baja] AND vaguedad[Media]",
-  "consecuente": "seguridad_texto",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF adecuacion_al_tema[Alta] AND muletillas[Baja] AND vaguedad[Media]",
+  "consequent": "seguridad_texto",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3287f"
   },
   "rule_id": 113,
-  "antecedente": "IF rapidez_del_habla[Baja] AND fluidez[Baja]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF rapidez_del_habla[Baja] AND fluidez[Baja]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32880"
   },
   "rule_id": 114,
-  "antecedente": "IF rapidez_del_habla[Baja] AND fluidez[Media]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF rapidez_del_habla[Baja] AND fluidez[Media]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32881"
   },
   "rule_id": 115,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Baja]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Baja]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32882"
   },
   "rule_id": 116,
-  "antecedente": "IF rapidez_del_habla[Baja] AND fluidez[Alta]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Baja] AND fluidez[Alta]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32883"
   },
   "rule_id": 117,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Media]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Media]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32884"
   },
   "rule_id": 118,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Baja]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Baja]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32885"
   },
   "rule_id": 119,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Bajo]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Bajo]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32886"
   },
   "rule_id": 120,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Bajo]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Media"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Bajo]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32887"
   },
   "rule_id": 121,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Alta]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Alta]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32888"
   },
   "rule_id": 122,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Medio]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Medio]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32889"
   },
   "rule_id": 123,
-  "antecedente": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Alto]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Media] AND fluidez[Alta] AND tiempo_de_reaccion[Alto]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3288a"
   },
   "rule_id": 124,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Medio]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Medio]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3288b"
   },
   "rule_id": 125,
-  "antecedente": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Alto]",
-  "consecuente": "seguridad_audio",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF rapidez_del_habla[Alta] AND fluidez[Media] AND tiempo_de_reaccion[Alto]",
+  "consequent": "seguridad_audio",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3288c"
   },
   "rule_id": 126,
-  "antecedente": "IF mirada[Difusa] AND cambios_de_postura[Regular]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF mirada[Difusa] AND cambios_de_postura[Regular]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3288d"
   },
   "rule_id": 127,
-  "antecedente": "IF mirada[Difusa] AND cambios_de_postura[Muchos]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF mirada[Difusa] AND cambios_de_postura[Muchos]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3288e"
   },
   "rule_id": 128,
-  "antecedente": "IF mirada[Normal] AND cambios_de_postura[Muchos]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Mala"
+  "antecedent": "IF mirada[Normal] AND cambios_de_postura[Muchos]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Mala"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3288f"
   },
   "rule_id": 129,
-  "antecedente": "IF cambios_de_postura[Pocos] AND mirada[Difusa]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Media"
+  "antecedent": "IF cambios_de_postura[Pocos] AND mirada[Difusa]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32890"
   },
   "rule_id": 130,
-  "antecedente": "IF cambios_de_postura[Pocos] AND mirada[Normal]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Media"
+  "antecedent": "IF cambios_de_postura[Pocos] AND mirada[Normal]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32891"
   },
   "rule_id": 131,
-  "antecedente": "IF mirada[Normal] AND cambios_de_postura[Regular]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND cambios_de_postura[Regular]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32892"
   },
   "rule_id": 132,
-  "antecedente": "IF mirada[Centrada] AND cambios_de_postura[Muchos]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Centrada] AND cambios_de_postura[Muchos]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32893"
   },
   "rule_id": 133,
-  "antecedente": "IF mirada[Centrada] AND cambios_de_postura[Pocos]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Buena"
+  "antecedent": "IF mirada[Centrada] AND cambios_de_postura[Pocos]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Buena"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32894"
   },
   "rule_id": 134,
-  "antecedente": "IF mirada[Centrada] AND cambios_de_postura[Regular]",
-  "consecuente": "posicion_corporal",
-  "consecuente_valor": "Buena"
+  "antecedent": "IF mirada[Centrada] AND cambios_de_postura[Regular]",
+  "consequent": "posicion_corporal",
+  "consequent_value": "Buena"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32895"
   },
   "rule_id": 135,
-  "antecedente": "IF originalidad[Baja] AND congruencia[Baja]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF originalidad[Baja] AND congruencia[Baja]",
+  "consequent": "exactitud",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32896"
   },
   "rule_id": 136,
-  "antecedente": "IF originalidad[Baja] AND congruencia[Media]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF originalidad[Baja] AND congruencia[Media]",
+  "consequent": "exactitud",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32897"
   },
   "rule_id": 137,
-  "antecedente": "IF originalidad[Media] AND congruencia[Baja]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF originalidad[Media] AND congruencia[Baja]",
+  "consequent": "exactitud",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32898"
   },
   "rule_id": 138,
-  "antecedente": "IF originalidad[Baja] AND congruencia[Alta]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Media"
+  "antecedent": "IF originalidad[Baja] AND congruencia[Alta]",
+  "consequent": "exactitud",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32899"
   },
   "rule_id": 139,
-  "antecedente": "IF originalidad[Media] AND congruencia[Media]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Media"
+  "antecedent": "IF originalidad[Media] AND congruencia[Media]",
+  "consequent": "exactitud",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3289a"
   },
   "rule_id": 140,
-  "antecedente": "IF originalidad[Alta] AND claridad[Baja]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Media"
+  "antecedent": "IF originalidad[Alta] AND claridad[Baja]",
+  "consequent": "exactitud",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3289b"
   },
   "rule_id": 141,
-  "antecedente": "IF originalidad[Alta] AND congruencia[Media]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Media"
+  "antecedent": "IF originalidad[Alta] AND congruencia[Media]",
+  "consequent": "exactitud",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3289c"
   },
   "rule_id": 142,
-  "antecedente": "IF congruencia[Alta] AND originalidad[Media]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF congruencia[Alta] AND originalidad[Media]",
+  "consequent": "exactitud",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3289d"
   },
   "rule_id": 143,
-  "antecedente": "IF congruencia[Alta] AND originalidad[Alta]",
-  "consecuente": "exactitud",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF congruencia[Alta] AND originalidad[Alta]",
+  "consequent": "exactitud",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3289e"
   },
   "rule_id": 144,
-  "antecedente": "IF velocidad[Baja] AND densidad[Baja] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF velocidad[Baja] AND densidad[Baja] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3289f"
   },
   "rule_id": 145,
-  "antecedente": "IF velocidad[Baja] AND densidad[Baja] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF velocidad[Baja] AND densidad[Baja] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a0"
   },
   "rule_id": 146,
-  "antecedente": "IF velocidad[Baja] AND densidad[Media] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF velocidad[Baja] AND densidad[Media] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a1"
   },
   "rule_id": 147,
-  "antecedente": "IF velocidad[Baja] AND exactitud[Alta] AND densidad[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Baja] AND exactitud[Alta] AND densidad[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a2"
   },
   "rule_id": 148,
-  "antecedente": "IF velocidad[Baja] AND exactitud[Alta] AND densidad[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Baja] AND exactitud[Alta] AND densidad[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a3"
   },
   "rule_id": 149,
-  "antecedente": "IF velocidad[Baja] AND densidad[Media] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Baja] AND densidad[Media] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a4"
   },
   "rule_id": 150,
-  "antecedente": "IF velocidad[Baja] AND densidad[Alta] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Baja] AND densidad[Alta] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a5"
   },
   "rule_id": 151,
-  "antecedente": "IF velocidad[Baja] AND densidad[Alta] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Baja] AND densidad[Alta] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a6"
   },
   "rule_id": 152,
-  "antecedente": "IF velocidad[Media] AND densidad[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Media] AND densidad[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a7"
   },
   "rule_id": 153,
-  "antecedente": "IF velocidad[Media] AND densidad[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Media] AND densidad[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a8"
   },
   "rule_id": 154,
-  "antecedente": "IF velocidad[Media] AND densidad[Alta] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Media] AND densidad[Alta] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328a9"
   },
   "rule_id": 155,
-  "antecedente": "IF velocidad[Media] AND densidad[Alta] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Media] AND densidad[Alta] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328aa"
   },
   "rule_id": 156,
-  "antecedente": "IF velocidad[Alta] AND densidad[Baja] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Alta] AND densidad[Baja] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ab"
   },
   "rule_id": 157,
-  "antecedente": "IF velocidad[Alta] AND densidad[Baja] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Alta] AND densidad[Baja] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ac"
   },
   "rule_id": 158,
-  "antecedente": "IF velocidad[Alta] AND densidad[Media] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Alta] AND densidad[Media] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ad"
   },
   "rule_id": 159,
-  "antecedente": "IF velocidad[Alta] AND densidad[Media] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Alta] AND densidad[Media] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ae"
   },
   "rule_id": 160,
-  "antecedente": "IF velocidad[Alta] AND densidad[Alta] AND exactitud[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF velocidad[Alta] AND densidad[Alta] AND exactitud[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328af"
   },
   "rule_id": 161,
-  "antecedente": "IF densidad[Alta] AND exactitud[Alta] AND velocidad[Baja]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF densidad[Alta] AND exactitud[Alta] AND velocidad[Baja]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b0"
   },
   "rule_id": 162,
-  "antecedente": "IF densidad[Alta] AND exactitud[Alta] AND velocidad[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF densidad[Alta] AND exactitud[Alta] AND velocidad[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b1"
   },
   "rule_id": 163,
-  "antecedente": "IF velocidad[Alta] AND exactitud[Alta]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF velocidad[Alta] AND exactitud[Alta]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b2"
   },
   "rule_id": 164,
-  "antecedente": "IF velocidad[Alta] AND densidad[Alta] AND exactitud[Media]",
-  "consecuente": "concision_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF velocidad[Alta] AND densidad[Alta] AND exactitud[Media]",
+  "consequent": "concision_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b3"
   },
   "rule_id": 165,
-  "antecedente": "IF mirada[Difusa] AND uniformidad_voz[Baja] AND serenidad[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Difusa] AND uniformidad_voz[Baja] AND serenidad[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b4"
   },
   "rule_id": 166,
-  "antecedente": "IF mirada[Difusa] AND uniformidad_voz[Baja] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Difusa] AND uniformidad_voz[Baja] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b5"
   },
   "rule_id": 167,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Baja] AND uniformidad_voz[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Baja] AND uniformidad_voz[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b6"
   },
   "rule_id": 168,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Baja] AND uniformidad_voz[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Baja] AND uniformidad_voz[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b7"
   },
   "rule_id": 169,
-  "antecedente": "IF mirada[Normal] AND serenidad[Baja] AND uniformidad_voz[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Normal] AND serenidad[Baja] AND uniformidad_voz[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b8"
   },
   "rule_id": 170,
-  "antecedente": "IF mirada[Normal] AND serenidad[Baja] AND uniformidad_voz[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Normal] AND serenidad[Baja] AND uniformidad_voz[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328b9"
   },
   "rule_id": 171,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Baja] AND serenidad[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Baja] AND serenidad[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ba"
   },
   "rule_id": 172,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Alta] AND uniformidad_voz[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Alta] AND uniformidad_voz[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328bb"
   },
   "rule_id": 173,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Alta] AND uniformidad_voz[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Alta] AND uniformidad_voz[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328bc"
   },
   "rule_id": 174,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Alta] AND uniformidad_voz[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Alta] AND uniformidad_voz[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328bd"
   },
   "rule_id": 175,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Media] AND uniformidad_voz[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Media] AND uniformidad_voz[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328be"
   },
   "rule_id": 176,
-  "antecedente": "IF mirada[Difusa] AND serenidad[Media] AND uniformidad_voz[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Difusa] AND serenidad[Media] AND uniformidad_voz[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328bf"
   },
   "rule_id": 177,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Baja] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Baja] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c0"
   },
   "rule_id": 178,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Baja] AND serenidad[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Baja] AND serenidad[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c1"
   },
   "rule_id": 179,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Media] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Media] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c2"
   },
   "rule_id": 180,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Media] AND serenidad[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Media] AND serenidad[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c3"
   },
   "rule_id": 181,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Alta] AND serenidad[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Alta] AND serenidad[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c4"
   },
   "rule_id": 182,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Alta] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Alta] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c5"
   },
   "rule_id": 183,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Baja] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Baja] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c6"
   },
   "rule_id": 184,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Baja] AND serenidad[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Baja] AND serenidad[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c7"
   },
   "rule_id": 185,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Media] AND serenidad[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Media] AND serenidad[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c8"
   },
   "rule_id": 186,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Media] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Media] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328c9"
   },
   "rule_id": 187,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Alta] AND serenidad[Baja]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Media"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Alta] AND serenidad[Baja]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ca"
   },
   "rule_id": 188,
-  "antecedente": "IF mirada[Normal] AND uniformidad_voz[Alta] AND serenidad[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF mirada[Normal] AND uniformidad_voz[Alta] AND serenidad[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328cb"
   },
   "rule_id": 189,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Media] AND serenidad[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Media] AND serenidad[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328cc"
   },
   "rule_id": 190,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Alta] AND serenidad[Media]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Alta] AND serenidad[Media]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328cd"
   },
   "rule_id": 191,
-  "antecedente": "IF mirada[Centrada] AND uniformidad_voz[Alta] AND serenidad[Alta]",
-  "consecuente": "seguridad_liderazgo",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF mirada[Centrada] AND uniformidad_voz[Alta] AND serenidad[Alta]",
+  "consequent": "seguridad_liderazgo",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ce"
   },
   "rule_id": 192,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Mala]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Mala]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328cf"
   },
   "rule_id": 193,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d0"
   },
   "rule_id": 194,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo[Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo[Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d1"
   },
   "rule_id": 195,
-  "antecedente": "IF concision_liderazgo[Baja] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Media]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Baja] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Media]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d2"
   },
   "rule_id": 196,
-  "antecedente": "IF concision_liderazgo[Baja] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Alta]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Baja] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Alta]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d3"
   },
   "rule_id": 197,
-  "antecedente": "IF concision_liderazgo[Media] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Baja]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Media] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Baja]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d4"
   },
   "rule_id": 198,
-  "antecedente": "IF concision_liderazgo[Media] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Media]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Media] AND argumentacion_liderazgo [Mala] AND seguridad_liderazgo[Media]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d5"
   },
   "rule_id": 199,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Mala]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Malo"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Mala]",
+  "consequent": "liderazgo",
+  "consequent_value": "Malo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d6"
   },
   "rule_id": 200,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d7"
   },
   "rule_id": 201,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d8"
   },
   "rule_id": 202,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328d9"
   },
   "rule_id": 203,
-  "antecedente": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Baja] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328da"
   },
   "rule_id": 204,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328db"
   },
   "rule_id": 205,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328dc"
   },
   "rule_id": 206,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328dd"
   },
   "rule_id": 207,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328de"
   },
   "rule_id": 208,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Mala]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Mala]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328df"
   },
   "rule_id": 209,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e0"
   },
   "rule_id": 210,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e1"
   },
   "rule_id": 211,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Baja] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e2"
   },
   "rule_id": 212,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Mala]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Mala]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e3"
   },
   "rule_id": 213,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e4"
   },
   "rule_id": 214,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Mala]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Normal"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Mala]",
+  "consequent": "liderazgo",
+  "consequent_value": "Normal"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e5"
   },
   "rule_id": 215,
-  "antecedente": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Bueno"
+  "antecedent": "IF concision_liderazgo[Media] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Bueno"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e6"
   },
   "rule_id": 216,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Bueno"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Media] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Bueno"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e7"
   },
   "rule_id": 217,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Normal]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Bueno"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Normal]",
+  "consequent": "liderazgo",
+  "consequent_value": "Bueno"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e8"
   },
   "rule_id": 218,
-  "antecedente": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Buena]",
-  "consecuente": "liderazgo",
-  "consecuente_valor": "Bueno"
+  "antecedent": "IF concision_liderazgo[Alta] AND seguridad_liderazgo[Alta] AND argumentacion_liderazgo [Buena]",
+  "consequent": "liderazgo",
+  "consequent_value": "Bueno"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328e9"
   },
   "rule_id": 219,
-  "antecedente": "IF seguridad_texto[Baja] AND seguridad_audio[Baja]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_texto[Baja] AND seguridad_audio[Baja]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ea"
   },
   "rule_id": 220,
-  "antecedente": "IF seguridad_texto[Baja] AND seguridad_audio[Media]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_texto[Baja] AND seguridad_audio[Media]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328eb"
   },
   "rule_id": 221,
-  "antecedente": "IF seguridad_texto[Media] AND seguridad_audio[Baja]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_texto[Media] AND seguridad_audio[Baja]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ec"
   },
   "rule_id": 222,
-  "antecedente": "IF seguridad_texto[Baja] AND seguridad_audio[Alta]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_texto[Baja] AND seguridad_audio[Alta]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ed"
   },
   "rule_id": 223,
-  "antecedente": "IF seguridad_texto[Media] AND seguridad_audio[Media]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_texto[Media] AND seguridad_audio[Media]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ee"
   },
   "rule_id": 224,
-  "antecedente": "IF seguridad_texto[Media] AND seguridad_audio[Alta]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_texto[Media] AND seguridad_audio[Alta]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ef"
   },
   "rule_id": 225,
-  "antecedente": "IF seguridad_texto[Alta] AND seguridad_audio[Baja]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_texto[Alta] AND seguridad_audio[Baja]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f0"
   },
   "rule_id": 226,
-  "antecedente": "IF seguridad_texto[Alta] AND seguridad_audio[Media]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF seguridad_texto[Alta] AND seguridad_audio[Media]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f1"
   },
   "rule_id": 227,
-  "antecedente": "IF seguridad_texto[Alta] AND seguridad_audio[Alta]",
-  "consecuente": "seguridad_expresion",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF seguridad_texto[Alta] AND seguridad_audio[Alta]",
+  "consequent": "seguridad_expresion",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f2"
   },
   "rule_id": 228,
-  "antecedente": "IF seguridad_expresion[Baja]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_expresion[Baja]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f3"
   },
   "rule_id": 229,
-  "antecedente": "IF seguridad_expresion[Media] AND posicion_corporal[Mala]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_expresion[Media] AND posicion_corporal[Mala]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f4"
   },
   "rule_id": 230,
-  "antecedente": "IF seguridad_expresion[Media] AND posicion_corporal[Media]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_expresion[Media] AND posicion_corporal[Media]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f5"
   },
   "rule_id": 231,
-  "antecedente": "IF seguridad_expresion[Media] AND posicion_corporal[Buena]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_expresion[Media] AND posicion_corporal[Buena]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f6"
   },
   "rule_id": 232,
-  "antecedente": "IF seguridad_expresion[Alta] AND posicion_corporal[Mala]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_expresion[Alta] AND posicion_corporal[Mala]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f7"
   },
   "rule_id": 233,
-  "antecedente": "IF seguridad_expresion[Alta] AND posicion_corporal[Media]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_expresion[Alta] AND posicion_corporal[Media]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f8"
   },
   "rule_id": 234,
-  "antecedente": "IF seguridad_expresion[Alta] AND posicion_corporal[Buena]",
-  "consecuente": "seguridad_persona",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF seguridad_expresion[Alta] AND posicion_corporal[Buena]",
+  "consequent": "seguridad_persona",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328f9"
   },
   "rule_id": 235,
-  "antecedente": "IF seguridad_persona[Baja] AND expresion[Mala]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_persona[Baja] AND expresion[Mala]",
+  "consequent": "autoestima",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328fa"
   },
   "rule_id": 236,
-  "antecedente": "IF seguridad_persona[Baja] AND expresion[Normal]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_persona[Baja] AND expresion[Normal]",
+  "consequent": "autoestima",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328fb"
   },
   "rule_id": 237,
-  "antecedente": "IF seguridad_persona[Media] AND expresion[Mala]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF seguridad_persona[Media] AND expresion[Mala]",
+  "consequent": "autoestima",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328fc"
   },
   "rule_id": 238,
-  "antecedente": "IF seguridad_persona[Baja] AND expresion[Buena]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_persona[Baja] AND expresion[Buena]",
+  "consequent": "autoestima",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328fd"
   },
   "rule_id": 239,
-  "antecedente": "IF seguridad_persona[Media] AND expresion[Normal]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_persona[Media] AND expresion[Normal]",
+  "consequent": "autoestima",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328fe"
   },
   "rule_id": 240,
-  "antecedente": "IF seguridad_persona[Media] AND expresion[Buena]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_persona[Media] AND expresion[Buena]",
+  "consequent": "autoestima",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da328ff"
   },
   "rule_id": 241,
-  "antecedente": "IF seguridad_persona[Alta] AND expresion[Mala]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Media"
+  "antecedent": "IF seguridad_persona[Alta] AND expresion[Mala]",
+  "consequent": "autoestima",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32900"
   },
   "rule_id": 242,
-  "antecedente": "IF seguridad_persona[Alta] AND expresion[Normal]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF seguridad_persona[Alta] AND expresion[Normal]",
+  "consequent": "autoestima",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32901"
   },
   "rule_id": 243,
-  "antecedente": "IF seguridad_persona[Alta] AND expresion[Buena]",
-  "consecuente": "autoestima",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF seguridad_persona[Alta] AND expresion[Buena]",
+  "consequent": "autoestima",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32902"
   },
   "rule_id": 244,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Mala] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Mala] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32903"
   },
   "rule_id": 245,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Mala] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Mala] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32904"
   },
   "rule_id": 246,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Mala] AND expresion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Mala] AND expresion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32905"
   },
   "rule_id": 247,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND expresion[Mala] AND comunicacion[Media]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND expresion[Mala] AND comunicacion[Media]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32906"
   },
   "rule_id": 248,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND expresion[Mala] AND comunicacion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND expresion[Mala] AND comunicacion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32907"
   },
   "rule_id": 249,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND comunicacion[Mala] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND comunicacion[Mala] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32908"
   },
   "rule_id": 250,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND comunicacion[Mala] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND comunicacion[Mala] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32909"
   },
   "rule_id": 251,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Mala] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Bajo"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Mala] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Bajo"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3290a"
   },
   "rule_id": 252,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Media] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Media] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3290b"
   },
   "rule_id": 253,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Media] AND expresion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Media] AND expresion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3290c"
   },
   "rule_id": 254,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Buena] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Buena] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3290d"
   },
   "rule_id": 255,
-  "antecedente": "IF lenguaje_no_verbal[Malo] AND comunicacion[Buena] AND expresion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Malo] AND comunicacion[Buena] AND expresion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3290e"
   },
   "rule_id": 256,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND expresion[Buena] AND comunicacion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND expresion[Buena] AND comunicacion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3290f"
   },
   "rule_id": 257,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND expresion[Buena] AND comunicacion[Media]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND expresion[Buena] AND comunicacion[Media]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32910"
   },
   "rule_id": 258,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND comunicacion[Media] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND comunicacion[Media] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32911"
   },
   "rule_id": 259,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND comunicacion[Media] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND comunicacion[Media] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32912"
   },
   "rule_id": 260,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND comunicacion[Buena] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND comunicacion[Buena] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32913"
   },
   "rule_id": 261,
-  "antecedente": "IF lenguaje_no_verbal[Normal] AND comunicacion[Buena] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Normal] AND comunicacion[Buena] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32914"
   },
   "rule_id": 262,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Mala] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Mala] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32915"
   },
   "rule_id": 263,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Mala] AND expresion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Mala] AND expresion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32916"
   },
   "rule_id": 264,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Media] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Media] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32917"
   },
   "rule_id": 265,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Media] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Media] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32918"
   },
   "rule_id": 266,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Buena] AND expresion[Mala]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Medio"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Buena] AND expresion[Mala]",
+  "consequent": "control_estres",
+  "consequent_value": "Medio"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32919"
   },
   "rule_id": 267,
-  "antecedente": "IF expresion[Buena] AND lenguaje_no_verbal[Normal] AND comunicacion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF expresion[Buena] AND lenguaje_no_verbal[Normal] AND comunicacion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3291a"
   },
   "rule_id": 268,
-  "antecedente": "IF expresion[Buena] AND lenguaje_no_verbal[Bueno] AND comunicacion[Media]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF expresion[Buena] AND lenguaje_no_verbal[Bueno] AND comunicacion[Media]",
+  "consequent": "control_estres",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3291b"
   },
   "rule_id": 269,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Buena] AND expresion[Normal]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Buena] AND expresion[Normal]",
+  "consequent": "control_estres",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3291c"
   },
   "rule_id": 270,
-  "antecedente": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Buena] AND expresion[Buena]",
-  "consecuente": "control_estres",
-  "consecuente_valor": "Alto"
+  "antecedent": "IF lenguaje_no_verbal[Bueno] AND comunicacion[Buena] AND expresion[Buena]",
+  "consequent": "control_estres",
+  "consequent_value": "Alto"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3291d"
   },
   "rule_id": 271,
-  "antecedente": "IF vocabulario[Malo] AND ideas[Malo]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vocabulario[Malo] AND ideas[Malo]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3291e"
   },
   "rule_id": 272,
-  "antecedente": "IF vocabulario[Malo] AND ideas[Normal]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vocabulario[Malo] AND ideas[Normal]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3291f"
   },
   "rule_id": 273,
-  "antecedente": "IF vocabulario[Malo] AND ideas[Bueno]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vocabulario[Malo] AND ideas[Bueno]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32920"
   },
   "rule_id": 274,
-  "antecedente": "IF vocabulario[Normal] AND ideas[Malo]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vocabulario[Normal] AND ideas[Malo]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32921"
   },
   "rule_id": 275,
-  "antecedente": "IF vocabulario[Normal] AND ideas[Normal]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF vocabulario[Normal] AND ideas[Normal]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32922"
   },
   "rule_id": 276,
-  "antecedente": "IF vocabulario[Normal] AND ideas[Bueno]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Media"
+  "antecedent": "IF vocabulario[Normal] AND ideas[Bueno]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32923"
   },
   "rule_id": 277,
-  "antecedente": "IF vocabulario[Bueno] AND ideas[Malo]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF vocabulario[Bueno] AND ideas[Malo]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32924"
   },
   "rule_id": 278,
-  "antecedente": "IF vocabulario[Bueno] AND ideas[Normal]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF vocabulario[Bueno] AND ideas[Normal]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32925"
   },
   "rule_id": 279,
-  "antecedente": "IF vocabulario[Bueno] AND ideas[Bueno]",
-  "consecuente": "calidad_texto",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF vocabulario[Bueno] AND ideas[Bueno]",
+  "consequent": "calidad_texto",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32926"
   },
   "rule_id": 280,
-  "antecedente": "IF calidad_texto[Baja]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF calidad_texto[Baja]",
+  "consequent": "creatividad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32927"
   },
   "rule_id": 281,
-  "antecedente": "IF calidad_texto[Media] AND lenguaje_no_verbal[Malo]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Baja"
+  "antecedent": "IF calidad_texto[Media] AND lenguaje_no_verbal[Malo]",
+  "consequent": "creatividad",
+  "consequent_value": "Baja"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32928"
   },
   "rule_id": 282,
-  "antecedente": "IF calidad_texto[Media] AND lenguaje_no_verbal[Normal]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF calidad_texto[Media] AND lenguaje_no_verbal[Normal]",
+  "consequent": "creatividad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da32929"
   },
   "rule_id": 283,
-  "antecedente": "IF calidad_texto[Media] AND lenguaje_no_verbal[Bueno]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF calidad_texto[Media] AND lenguaje_no_verbal[Bueno]",
+  "consequent": "creatividad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3292a"
   },
   "rule_id": 284,
-  "antecedente": "IF calidad_texto[Alta] AND lenguaje_no_verbal[Malo]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Media"
+  "antecedent": "IF calidad_texto[Alta] AND lenguaje_no_verbal[Malo]",
+  "consequent": "creatividad",
+  "consequent_value": "Media"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3292b"
   },
   "rule_id": 285,
-  "antecedente": "IF calidad_texto[Alta] AND lenguaje_no_verbal[Normal]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF calidad_texto[Alta] AND lenguaje_no_verbal[Normal]",
+  "consequent": "creatividad",
+  "consequent_value": "Alta"
 },
 {
   "_id": {
     "$oid": "6754a873489797b71da3292c"
   },
   "rule_id": 286,
-  "antecedente": "IF calidad_texto[Alta] AND lenguaje_no_verbal[Bueno]",
-  "consecuente": "creatividad",
-  "consecuente_valor": "Alta"
+  "antecedent": "IF calidad_texto[Alta] AND lenguaje_no_verbal[Bueno]",
+  "consequent": "creatividad",
+  "consequent_value": "Alta"
 }]
