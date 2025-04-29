@@ -366,9 +366,9 @@ def lectura_reglas_borrosas(df_reglas):
 
     for index,row in df_reglas.iterrows():
       try:
-        antecedente = row['antecedente']
-        consecuente = row['consecuente']
-        v_consecuente = row['consecuente_valor']
+        antecedente = row['antecedent']
+        consecuente = row['consequent']
+        v_consecuente = row['consequent_value']
         
         antecedente = antecedente[3:]
 

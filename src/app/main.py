@@ -94,19 +94,19 @@ def read_root():
 def get_antecedents():
     try:
         variables_borrosas_collection = evaluacion_soft_skills_db['fuzzy_variables']
-        antecedentes = list(variables_borrosas_collection.find({'$or':[{'metrica':True}, {'soft_skill':{'$exists':False}}]},{'_id':0}))
+        antecedentes = list(variables_borrosas_collection.find({'$or':[{'measure':True}, {'soft_skill':{'$exists':False}}]},{'_id':0}))
         #Changing the presentation format of variables
         antecedentes_en =[]
         for antecedente in antecedentes:
             print(antecedente)
             antecedente_en = {}
-            antecedente_en['variable_description'] = antecedente['descripcion_variable_en']
-            antecedente_en['variable_description_es'] = antecedente['descripcion_variable']
-            antecedente_en['fuzzy_sets'] = antecedente['conjuntos_borrosos_en']
-            antecedente_en['fuzzy_sets_es'] = antecedente['conjuntos_borrosos']
-            antecedente_en['variable_name_es'] = antecedente['nombre_variable']
-            if 'metrica' in antecedente:
-                antecedente_en['measure'] = antecedente['metrica']
+            antecedente_en['variable_description'] = antecedente['variable_description_en']
+            antecedente_en['variable_description_es'] = antecedente['variable_description']
+            antecedente_en['fuzzy_sets'] = antecedente['fuzzy_sets_en']
+            antecedente_en['fuzzy_sets_es'] = antecedente['fuzzy_sets']
+            antecedente_en['variable_name_es'] = antecedente['variable_name']
+            if 'measure' in antecedente:
+                antecedente_en['measure'] = antecedente['measure']
             antecedentes_en.append(antecedente_en)
         return antecedentes_en
     except Exception as e:
@@ -117,17 +117,17 @@ def get_antecedents():
 def get_consequents():
     try:
         variables_borrosas_collection = evaluacion_soft_skills_db['fuzzy_variables']
-        consecuentes = list(variables_borrosas_collection.find({'metrica':{'$exists':False}},{'_id':0}))
+        consecuentes = list(variables_borrosas_collection.find({'measure':{'$exists':False}},{'_id':0}))
         #Changing the presentation format of variables
         consecuentes_en =[]
         for consecuente in consecuentes:
             print(consecuente)
             consecuente_en = {}
-            consecuente_en['variable_description'] = consecuente['descripcion_variable_en']
-            consecuente_en['variable_description_es'] = consecuente['descripcion_variable']
-            consecuente_en['fuzzy_sets'] = consecuente['conjuntos_borrosos_en']
-            consecuente_en['fuzzy_sets_es'] = consecuente['conjuntos_borrosos']
-            consecuente_en['variable_name_es'] = consecuente['nombre_variable']
+            consecuente_en['variable_description'] = consecuente['variable_description_en']
+            consecuente_en['variable_description_es'] = consecuente['variable_description']
+            consecuente_en['fuzzy_sets'] = consecuente['fuzzy_sets_en']
+            consecuente_en['fuzzy_sets_es'] = consecuente['fuzzy_sets']
+            consecuente_en['variable_name_es'] = consecuente['variable_name']
             consecuentes_en.append(consecuente_en)
         return consecuentes_en
     except Exception as e:
@@ -138,7 +138,7 @@ def get_consequents():
 def rule_post(rule:Rule):
     try:
         reglas_collection = evaluacion_soft_skills_db['rules_evaluation']
-        rule_document = {'antecedente':rule.antecedent, 'consecuente':rule.consequent, 'consecuente_valor':rule.consequent_value}
+        rule_document = {'antecedent':rule.antecedent, 'consequent':rule.consequent, 'consequent_value':rule.consequent_value}
         reglas_collection.insert_one(rule_document)
         return {"Message":"Rule created"}
     except Exception as e:
