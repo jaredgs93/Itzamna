@@ -18,39 +18,55 @@ This repository provides a system for evaluating skills using a multimodal appro
 5. [Building and Running the Docker Image](#building-and-running-the-docker-image)
 6. [How to Use](#how-to-use)
 7. [API Endpoints](#api-endpoints)
-8. [Performance and Resource Requirements](#performance_and_resource_requirements)
+8. [Example Execution](#example-execution)
+9. [Performance and Resource Requirements](#performance-and-resource-requirements)
 ---
 ## Project Structure
 The repository is organized as follows:
 ```bash
+examples/
+├── sample_outputs/       # Contains all output files generated after evaluating the example video
+│   ├── audio.wav              # Extracted audio track from the video
+│   ├── blinking.json          # Detected blinks per frame
+│   ├── emotions.json          # Detected emotional expressions across the video
+│   ├── faces_smiles.json      # Facial landmarks and smile detection per frame
+│   ├── fuzzy_control_output.json # Final fuzzy evaluation results and linguistic labels
+│   ├── measures_for_inference.json # Aggregated metrics used as input to the fuzzy system
+│   ├── metadata.json          # Video metadata (e.g., duration, resolution)
+│   ├── prosody.TextGrid       # Prosodic features: pitch, rhythm, timing
+│   ├── skills_explanation.txt # Human-readable breakdown of assessed skills and subcomponents
+│   ├── text_measures.json     # Linguistic analysis: vocabulary richness, structure, etc.
+│   ├── topics.json            # Key topics detected in the spoken content
+│   └── transcription.json     # Full transcription of the spoken audio
+├── video_example.mp4          # Sample video used to illustrate the system's full pipeline
 src/
-├── app/                  # Contains Python scripts and modules for the API
-│   ├── __init__.py       # Initializes the app module
-│   ├── audio.py          # Handles audio processing for video evaluation
-│   ├── inference.py      # Contains machine learning inference logic
-│   ├── main.py           # Entry point for the API
-│   ├── myprosody2.py     # Processes prosodic features for speech analysis
-│   ├── processing.py     # Handles data processing and integration tasks
-│   ├── report_generation.py # Generates detailed reports based on evaluations
-│   ├── text.py           # Processes textual data extracted from videos
-│   ├── translation.py    # Handles translation tasks, if applicable
-│   └── video.py          # Manages video-related operations
-│   └── ...               # Additional scripts and modules
-├── data/                 # Contains data files and MongoDB initialization script
+├── app/                       # Contains Python scripts and modules for the API
+│   ├── __init__.py            # Initializes the app module
+│   ├── audio.py               # Handles audio processing for video evaluation
+│   ├── inference.py           # Contains machine learning inference logic
+│   ├── main.py                # Entry point for the API
+│   ├── myprosody2.py          # Processes prosodic features for speech analysis
+│   ├── processing.py          # Handles data processing and integration tasks
+│   ├── report_generation.py   # Generates detailed reports based on evaluations
+│   ├── text.py                # Processes textual data extracted from videos
+│   ├── translation.py         # Handles translation tasks, if applicable
+│   └── video.py               # Manages video-related operations
+│   └── ...                    # Additional scripts and modules
+├── data/                      # Contains data files and MongoDB initialization script
 │   ├── fuzzy_variables.json   # JSON file for initializing fuzzy variables
 │   ├── rules_evaluation.json  # JSON file for initializing rules
-│   └── init-mongo.sh     # Script to load data into MongoDB
-├── front/                # Contains Streamlit-based user interfaces
-│   ├── rules_creation.py # Interface for creating evaluation rules
-│   ├── user_interface.py # Interface for uploading videos and viewing reports
-├── .gitattributes        # Configuration for Git LFS
-├── .gitignore            # Files and directories ignored by Git
-├── Dockerfile            # Instructions to build the Docker image
-├── LICENSE               # License file for the repository
-├── README.md             # Documentation for the repository
-├── docker-compose.yml    # Orchestration of the services with Docker
-├── environment-streamlit.yml # Conda environment configuration for Streamlit
-└── environment.yml       # Conda environment configuration for the API
+│   └── init-mongo.sh          # Script to load data into MongoDB
+├── front/                     # Contains Streamlit-based user interfaces
+│   ├── rules_creation.py      # Interface for creating evaluation rules
+│   ├── user_interface.py      # Interface for uploading videos and viewing reports
+├── .gitattributes             # Configuration for Git LFS
+├── .gitignore                 # Files and directories ignored by Git
+├── Dockerfile                 # Instructions to build the Docker image
+├── LICENSE                    # License file for the repository
+├── README.md                  # Documentation for the repository
+├── docker-compose.yml         # Orchestration of the services with Docker
+├── environment-streamlit.yml  # Conda environment configuration for Streamlit
+└── environment.yml            # Conda environment configuration for the API
 ```
 
 ### Details
@@ -384,6 +400,39 @@ curl -X 'POST' \
 ```
 ---
 
+## Example Execution
+
+To facilitate replication and demonstrate the output structure, the repository includes a working example located in the `examples/` directory.
+
+- `video_example.mp4`: A sample evaluation video, already anonymised.
+- `sample_outputs/`: The output files automatically generated by the system after processing the video.
+
+Each output file corresponds to a specific analysis stage, such as:
+- Video metadata: `metadata.json`
+- Extracted audio: `audio.wav`
+- Transcription: `transcription.json`
+- Facial and emotional analysis: `faces_smiles.json`, `emotions.json`, `blinking.json`
+- Text and prosodic features: `text_measures.json`, `prosody.TextGrid`, `topics.json`
+- Fuzzy system inputs and outputs: `measures_for_inference.json`, `fuzzy_control_output.json`
+- Final report input and output: `skills_explanation.txt`
+
+### How to Run the Example
+
+1. Access the User Interface
+2. In the "Multimodal Assessment of Transversal Skills" form:
+   - Enter the following video path:
+   ```bash
+   /absolute/path/to/Itzamna/examples/video_example.mp4
+   ```
+3. Set the topic to:
+   ```bash
+   Computer science
+   ```
+4. Click on `Upload video URL` to start the evaluation.
+
+This example showcases the complete evaluation pipeline and enables users to inspect both the frontend summary and the raw structured outputs.
+
+---
 ## Performance and Resource Requirements
 
 To validate the system’s scalability and suitability for real-world deployment, a series of performance benchmarks were conducted using a Linode dedicated server with the following specifications:
