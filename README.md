@@ -351,7 +351,7 @@ These rules follow a human-readable structure (e.g., `IF X[Low] AND Y[High]`) an
 Below is a list of available API endpoints with their descriptions, example requests, and expected input:
 
 ### 1. GET /antecedents
-Retrieve the list of antecedents for rule creation.
+Retrieves a list of potential antecedents (input variables) from the fuzzy variables collection, which users can employ to define conditions for fuzzy rules. Each antecedent is accompanied by detailed descriptions and fuzzy sets.
 
 **Example Request**
 ```bash
@@ -361,7 +361,7 @@ curl -X 'GET' \
 ```
 
 ### 2. GET /consequents
-Retrieve the list of consequents for rule creation.
+Returns a list of consequents from the fuzzy variables collection, representing potential outcomes for the fuzzy rules. Each consequent includes descriptive information and associated fuzzy sets, which define the possible levels of each consequent.
 
 **Example Request**
 ```bash
@@ -371,7 +371,7 @@ curl -X 'GET' \
 ```
 
 ### 3. POST /create_rule
-Create a new rule based on the specified antecedent, consequent, and consequent value.
+Permits users to define new fuzzy rules by indicating antecedents, consequents, and consequent values. These rules are stored in a MongoDB collection, thereby facilitating the creation of bespoke configurations for skills assessments aligned with the organisational context's specific requirements.
 
 **Request Body**
 ```bash
@@ -393,7 +393,7 @@ curl -X 'POST' \
 }'
 ```
 ### 4. POST /check_video_eligibility
-Check if a video meets the eligibility criteria for evaluation.
+Verifies whether a video adheres to the specified criteria (e.g., duration, resolution) for evaluation. If the video fails to meet the above mentioned criteria, the endpoint will return a detailed message explaining the ineligibility.
 
 **Request Body**
 ```bash
@@ -415,7 +415,7 @@ curl -X 'POST' \
 
 ### 5. POST /evaluate_skills
 
-Evaluate the transversal skills from the given video.
+Initiates a comprehensive assessment of an eligible video. This endpoint accepts two parameters: the URL of the video to be evaluated and the topic the user is expected to discuss. Initially, it verifies the video's eligibility through the \textit{/check\_video\_eligibility} endpoint. Subsequently, it conducts multimedia analyses through different AI techniques. The outcomes of these analyses are then synthesised into a structured skills assessment.
 
 **Request Body**
 ```bash
