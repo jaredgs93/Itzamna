@@ -97,7 +97,7 @@ This system uses 26 behavioural measures grouped by modality. Each measure is qu
 |--------------|-----------------------|------------------|-----------|
 | **Audio**    | Consistency           | Absence of long pauses or hesitations in speech. Ratio of pause time over total time. | [0,10] |
 |              | Fluency               | Number of pauses and interruptions per minute. | [0,50] |
-|              | Mood                  | Vocal tone detection: reading, neutral, passionate. | [0,2] |
+|              | Mood                  | Vocal tone detection: reading, neutral, passionate. | [0,4] |
 |              | Noise                 | Detection of background or external sounds (e.g., throat clearing). Ratio of noise presence. | [0,10] |
 |              | Reaction time         | Time taken to begin speaking after a stimulus, in seconds. | [0,4] |
 |              | Speech speed          | Number of syllables per second. | [0,8] |
